@@ -87,7 +87,9 @@
     radial-gradient(circle at 92% 18%, rgba(190, 205, 50, 0.22) 0%, transparent 28%),
     radial-gradient(circle at 80% 85%, rgba(80, 150, 190, 0.35) 0%, transparent 45%),
     linear-gradient(135deg, #00254a 0%, #00305E 45%, #004982 80%, #2b739e 100%) !important;
-  position: relative;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 40 !important;
   box-shadow: 0 2px 8px rgba(0, 29, 58, 0.25);
   color: #ffffff !important;
 }
@@ -179,6 +181,28 @@
 .md-header__title {
   font-weight: 700;
   letter-spacing: -0.01em;
+}
+
+/* Keep brand title visible and clickable on scroll */
+.md-header__title--active .md-header__topic:first-child {
+  z-index: 0 !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transform: none !important;
+}
+
+.md-header__title--active .md-header__topic + .md-header__topic {
+  display: none !important;
+}
+
+.dtr-header-home-link {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.dtr-header-home-link:hover {
+  opacity: 0.88;
 }
 
 /* --------------------------------------------------------------------------
