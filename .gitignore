@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+fiware/venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.env
+.env
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Application Runtime Outputs & Logs
+logs/*.log
+logs/*.pid
+*.aux
+*.log
+*.out
+*.synctex.gz
+simulations/temp-deform-*
+# Cache / Docs Build Outputs
+cache/
+.cache/
+cache.db
+*.DS_Store
+*.h5
+docs/_build/
+docs/custom/
+site/
+descr/*.zip
+
+# IDEs
+.vscode/
+.idea/
+
+# Internal Chair Assets & Proprietary Grant Materials (GitLab-only)
+chair_assets/

@@ -1,0 +1,835 @@
+{
+  "manifest_version": "2.0.0",
+  "corridor_id": "a14_corridor",
+  "roadside_units": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "rsu_00",
+          "tag": "RSU-00",
+          "name": "RSU-00 (Dresden-Altstadt / Elbebr\u00fccke)",
+          "town": "Dresden-Altstadt / Kemnitz",
+          "station_km": 5.1,
+          "ClosestPoint": 5.1,
+          "coverage_radius_km": 10.0,
+          "standard": "ETSI ITS-G5 / IEEE 802.11p"
+        },
+        "geometry": {
+          "coordinates": [
+            13.683309685576688,
+            51.076359619955326
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "rsu_01",
+          "tag": "RSU-01",
+          "name": "RSU-01 (Wilsdruff / Grumbach)",
+          "town": "Wilsdruff / Grumbach",
+          "station_km": 17.7,
+          "ClosestPoint": 17.7,
+          "coverage_radius_km": 10.0,
+          "standard": "ETSI ITS-G5 / IEEE 802.11p"
+        },
+        "geometry": {
+          "coordinates": [
+            13.510902263585194,
+            51.06156015037345
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "rsu_02",
+          "tag": "RSU-02",
+          "name": "RSU-02 (AD Nossen / Triebischtal)",
+          "town": "AD Nossen (A4 / A14 Split)",
+          "station_km": 27.9,
+          "ClosestPoint": 27.9,
+          "coverage_radius_km": 10.0,
+          "standard": "ETSI ITS-G5 / IEEE 802.11p"
+        },
+        "geometry": {
+          "coordinates": [
+            13.371187377570408,
+            51.05445120997962
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "rsu_03",
+          "tag": "RSU-03",
+          "name": "RSU-03 (D\u00f6beln-Ost / Ro\u00dfwein)",
+          "town": "D\u00f6beln-Ost / Ro\u00dfwein",
+          "station_km": 43.3,
+          "ClosestPoint": 43.3,
+          "coverage_radius_km": 10.0,
+          "standard": "ETSI ITS-G5 / IEEE 802.11p"
+        },
+        "geometry": {
+          "coordinates": [
+            13.175784629451499,
+            51.112831914780344
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "rsu_04",
+          "tag": "RSU-04",
+          "name": "RSU-04 (Leisnig / Gro\u00dfweitzschen)",
+          "town": "Leisnig / Gro\u00dfweitzschen",
+          "station_km": 58.5,
+          "ClosestPoint": 58.5,
+          "coverage_radius_km": 10.0,
+          "standard": "ETSI ITS-G5 / IEEE 802.11p"
+        },
+        "geometry": {
+          "coordinates": [
+            13.008940450679063,
+            51.188549283783146
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "rsu_05",
+          "tag": "RSU-05",
+          "name": "RSU-05 (Mutzschen / Wermsdorf)",
+          "town": "Mutzschen / Wermsdorf",
+          "station_km": 71.3,
+          "ClosestPoint": 71.3,
+          "coverage_radius_km": 10.0,
+          "standard": "ETSI ITS-G5 / IEEE 802.11p"
+        },
+        "geometry": {
+          "coordinates": [
+            12.856454958570396,
+            51.24292644742138
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "rsu_06",
+          "tag": "RSU-06",
+          "name": "RSU-06 (Grimma / Hohnst\u00e4dt)",
+          "town": "Grimma / Hohnst\u00e4dt",
+          "station_km": 77.3,
+          "ClosestPoint": 77.3,
+          "coverage_radius_km": 10.0,
+          "standard": "ETSI ITS-G5 / IEEE 802.11p"
+        },
+        "geometry": {
+          "coordinates": [
+            12.778674110746294,
+            51.2583025069039
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "rsu_07",
+          "tag": "RSU-07",
+          "name": "RSU-07 (Naunhof / Brandis)",
+          "town": "Naunhof / Brandis",
+          "station_km": 91.3,
+          "ClosestPoint": 91.3,
+          "coverage_radius_km": 10.0,
+          "standard": "ETSI ITS-G5 / IEEE 802.11p"
+        },
+        "geometry": {
+          "coordinates": [
+            12.600051526322943,
+            51.303905576470214
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "rsu_08",
+          "tag": "RSU-08",
+          "name": "RSU-08 (Partheaue / Albrechtshain)",
+          "town": "Partheaue / Albrechtshain",
+          "station_km": 99.9,
+          "ClosestPoint": 99.9,
+          "coverage_radius_km": 10.0,
+          "standard": "ETSI ITS-G5 / IEEE 802.11p"
+        },
+        "geometry": {
+          "coordinates": [
+            12.511442829684256,
+            51.287274804251325
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "rsu_09",
+          "tag": "RSU-09",
+          "name": "RSU-09 (Engelsdorf / Leipzig-Ost)",
+          "town": "Engelsdorf / Leipzig-Ost",
+          "station_km": 109.5,
+          "ClosestPoint": 109.5,
+          "coverage_radius_km": 10.0,
+          "standard": "ETSI ITS-G5 / IEEE 802.11p"
+        },
+        "geometry": {
+          "coordinates": [
+            12.387238420231085,
+            51.24942573074924
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "rsu_10",
+          "tag": "RSU-10",
+          "name": "RSU-10 (Leipzig-Mitte / Messe)",
+          "town": "Leipzig-Mitte / Messe",
+          "station_km": 119.1,
+          "ClosestPoint": 119.1,
+          "coverage_radius_km": 10.0,
+          "standard": "ETSI ITS-G5 / IEEE 802.11p"
+        },
+        "geometry": {
+          "coordinates": [
+            12.362212424107383,
+            51.321978683744135
+          ],
+          "type": "Point"
+        }
+      }
+    ]
+  },
+  "spawn_points": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_00_dd_altstadt",
+          "code": "AS 78",
+          "short_code": "DD-ALT",
+          "name": "AS 78 Dresden-Altstadt",
+          "junction_type": "Anschlussstelle (Slip-Road Junction)",
+          "highway": "A4",
+          "connecting_roads": "B6 / Mei\u00dfner Landstra\u00dfe",
+          "ramp_lanes": 2,
+          "hgv_share_pct": 24,
+          "daily_aadt": 68500
+        },
+        "geometry": {
+          "coordinates": [
+            13.689482198486843,
+            51.082850094769555
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_01_dd_west",
+          "code": "AD 77b",
+          "short_code": "DD-W",
+          "name": "AD Dresden-West",
+          "junction_type": "Autobahndreieck (3-Way Interchange)",
+          "highway": "A4 / A17",
+          "connecting_roads": "A17 (Prague Corridor)",
+          "ramp_lanes": 3,
+          "hgv_share_pct": 31,
+          "daily_aadt": 84200
+        },
+        "geometry": {
+          "coordinates": [
+            13.605782126242815,
+            51.06290535134761
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_02_wilsdruff",
+          "code": "AS 77a",
+          "short_code": "WILS",
+          "name": "AS 77a Wilsdruff",
+          "junction_type": "Anschlussstelle (Slip-Road Junction)",
+          "highway": "A4",
+          "connecting_roads": "S36 / Freiberger Stra\u00dfe",
+          "ramp_lanes": 2,
+          "hgv_share_pct": 22,
+          "daily_aadt": 59400
+        },
+        "geometry": {
+          "coordinates": [
+            13.523437872280908,
+            51.06047389234723
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_03_ad_nossen",
+          "code": "AD 76",
+          "short_code": "AD-NOS",
+          "name": "AD Nossen (A4 / A14 Split)",
+          "junction_type": "Autobahndreieck (3-Way Corridor Split)",
+          "highway": "A4 / A14",
+          "connecting_roads": "A4 (Chemnitz) \u2194 A14 (Leipzig)",
+          "ramp_lanes": 3,
+          "hgv_share_pct": 34,
+          "daily_aadt": 91000
+        },
+        "geometry": {
+          "coordinates": [
+            13.366639499321366,
+            51.05376390524532
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_04_nossen_ost",
+          "code": "AS 35",
+          "short_code": "NOS-E",
+          "name": "AS 35 Nossen-Ost",
+          "junction_type": "Anschlussstelle (Slip-Road Junction)",
+          "highway": "A14",
+          "connecting_roads": "B101 (Mei\u00dfen / Freiberg)",
+          "ramp_lanes": 2,
+          "hgv_share_pct": 26,
+          "daily_aadt": 51200
+        },
+        "geometry": {
+          "coordinates": [
+            13.343542918245845,
+            51.05709778943324
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_05_nossen_nord",
+          "code": "AS 34",
+          "short_code": "NOS-N",
+          "name": "AS 34 Nossen-Nord",
+          "junction_type": "Anschlussstelle (Slip-Road Junction)",
+          "highway": "A14",
+          "connecting_roads": "B175 (Nossen / Ro\u00dfwein)",
+          "ramp_lanes": 2,
+          "hgv_share_pct": 25,
+          "daily_aadt": 48900
+        },
+        "geometry": {
+          "coordinates": [
+            13.276586973485706,
+            51.08387533449954
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_06_doebeln_ost",
+          "code": "AS 33",
+          "short_code": "DL-E",
+          "name": "AS 33 D\u00f6beln-Ost",
+          "junction_type": "Anschlussstelle (Slip-Road Junction)",
+          "highway": "A14",
+          "connecting_roads": "B175 / S34 (D\u00f6beln-Zentrum)",
+          "ramp_lanes": 2,
+          "hgv_share_pct": 27,
+          "daily_aadt": 49500
+        },
+        "geometry": {
+          "coordinates": [
+            13.17599631905344,
+            51.11293701409525
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_07_doebeln_nord",
+          "code": "AS 32",
+          "short_code": "DL-N",
+          "name": "AS 32 D\u00f6beln-Nord",
+          "junction_type": "Anschlussstelle (Slip-Road Junction)",
+          "highway": "A14",
+          "connecting_roads": "B169 (Riesa / D\u00f6beln)",
+          "ramp_lanes": 2,
+          "hgv_share_pct": 29,
+          "daily_aadt": 52800
+        },
+        "geometry": {
+          "coordinates": [
+            13.123578314155395,
+            51.15582624343929
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_08_leisnig",
+          "code": "AS 31",
+          "short_code": "LEIS",
+          "name": "AS 31 Leisnig",
+          "junction_type": "Anschlussstelle (Slip-Road Junction)",
+          "highway": "A14",
+          "connecting_roads": "S31 (Leisnig / M\u00fcgeln)",
+          "ramp_lanes": 2,
+          "hgv_share_pct": 23,
+          "daily_aadt": 46100
+        },
+        "geometry": {
+          "coordinates": [
+            12.965873039427407,
+            51.20113033235131
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_09_mutzschen",
+          "code": "AS 30",
+          "short_code": "MUTZ",
+          "name": "AS 30 Mutzschen",
+          "junction_type": "Anschlussstelle (Slip-Road Junction)",
+          "highway": "A14",
+          "connecting_roads": "S38 (Wermsdorf / Mutzschen)",
+          "ramp_lanes": 2,
+          "hgv_share_pct": 24,
+          "daily_aadt": 47300
+        },
+        "geometry": {
+          "coordinates": [
+            12.859789156277884,
+            51.24223943489409
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_10_grimma",
+          "code": "AS 29",
+          "short_code": "GRIM",
+          "name": "AS 29 Grimma",
+          "junction_type": "Anschlussstelle (Slip-Road Junction)",
+          "highway": "A14",
+          "connecting_roads": "B107 (Grimma / Wurzen)",
+          "ramp_lanes": 2,
+          "hgv_share_pct": 28,
+          "daily_aadt": 55400
+        },
+        "geometry": {
+          "coordinates": [
+            12.732596821418412,
+            51.2572403659409
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_11_klinga",
+          "code": "AS 28",
+          "short_code": "KLIN",
+          "name": "AS 28 Klinga",
+          "junction_type": "Anschlussstelle (Slip-Road Junction)",
+          "highway": "A14",
+          "connecting_roads": "S45 (Parthenstein / Klinga)",
+          "ramp_lanes": 2,
+          "hgv_share_pct": 25,
+          "daily_aadt": 53900
+        },
+        "geometry": {
+          "coordinates": [
+            12.639394073080183,
+            51.28631073727226
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_12_naunhof",
+          "code": "AS 27",
+          "short_code": "NAUN",
+          "name": "AS 27 Naunhof",
+          "junction_type": "Anschlussstelle (Slip-Road Junction)",
+          "highway": "A14",
+          "connecting_roads": "S43 (Naunhof / Brandis)",
+          "ramp_lanes": 2,
+          "hgv_share_pct": 26,
+          "daily_aadt": 58100
+        },
+        "geometry": {
+          "coordinates": [
+            12.597259724121756,
+            51.30527860952424
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_13_ad_parthenaue",
+          "code": "AD 26b",
+          "short_code": "PART",
+          "name": "AD Parthenaue (A14 / A38)",
+          "junction_type": "Autobahndreieck (3-Way Interchange)",
+          "highway": "A14 / A38",
+          "connecting_roads": "A38 (G\u00f6ttingen / South Ring)",
+          "ramp_lanes": 3,
+          "hgv_share_pct": 33,
+          "daily_aadt": 76800
+        },
+        "geometry": {
+          "coordinates": [
+            12.552959944315546,
+            51.309765599810845
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_14_kleinpoesna",
+          "code": "AS 26a",
+          "short_code": "KLP",
+          "name": "AS 26a Kleinp\u00f6sna",
+          "junction_type": "Anschlussstelle (Slip-Road Junction)",
+          "highway": "A14",
+          "connecting_roads": "S38 (Borsdorf / Kleinp\u00f6sna)",
+          "ramp_lanes": 2,
+          "hgv_share_pct": 27,
+          "daily_aadt": 62300
+        },
+        "geometry": {
+          "coordinates": [
+            12.46255812280512,
+            51.26243083916958
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_15_leipzig_ost",
+          "code": "AS 25",
+          "short_code": "LPZ-E",
+          "name": "AS 25 Leipzig-Ost",
+          "junction_type": "Anschlussstelle (Urban Arterial Interchange)",
+          "highway": "A14",
+          "connecting_roads": "B6 (Leipzig-Paunsdorf / Wurzen)",
+          "ramp_lanes": 3,
+          "hgv_share_pct": 30,
+          "daily_aadt": 71500
+        },
+        "geometry": {
+          "coordinates": [
+            12.39241477971865,
+            51.248166640841134
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_16_dresden_hub",
+          "code": "DD-HUB",
+          "short_code": "DD",
+          "name": "Dresden-Neustadt Corridor Hub",
+          "junction_type": "Autobahnanschluss (Eastern Corridor Origin)",
+          "highway": "A4",
+          "connecting_roads": "B170 / Hansastra\u00dfe Dresden",
+          "ramp_lanes": 3,
+          "hgv_share_pct": 29,
+          "daily_aadt": 79000
+        },
+        "geometry": {
+          "coordinates": [
+            13.736678587070429,
+            51.06365835395388
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "jct_17_leipzig_hub",
+          "code": "LPZ-HUB",
+          "short_code": "LPZ",
+          "name": "Leipzig-Mitte / Messe Hub",
+          "junction_type": "Autobahnanschluss (Western Corridor Terminus)",
+          "highway": "A14",
+          "connecting_roads": "B2 (Leipzig-Zentrum / Messe)",
+          "ramp_lanes": 3,
+          "hgv_share_pct": 32,
+          "daily_aadt": 82400
+        },
+        "geometry": {
+          "coordinates": [
+            12.370843083201123,
+            51.33504996112444
+          ],
+          "type": "Point"
+        }
+      }
+    ]
+  },
+  "water_sources": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "water_00_zschonerbach",
+          "name": "Zschonerbach / Elbe Basin",
+          "water_type": "Alluvial Stream & Groundwater Table",
+          "basin": "Upper Elbe Catchment (Dresden-West)",
+          "influence_radius_m": 5000,
+          "water_table_depth_m": 1.4,
+          "moisture_saturation_pct": 78,
+          "frost_susceptibility": "F2 (Moderate)"
+        },
+        "geometry": {
+          "coordinates": [
+            13.67269682309012,
+            51.073381408763396
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "water_01_wilde_sau",
+          "name": "Wilde Sau Valley (Wilsdruff)",
+          "water_type": "Tributary Stream & Culvert Crossing",
+          "basin": "Mei\u00dfner Hochland / Wilde Sau",
+          "influence_radius_m": 5000,
+          "water_table_depth_m": 1.2,
+          "moisture_saturation_pct": 82,
+          "frost_susceptibility": "F3 (High)"
+        },
+        "geometry": {
+          "coordinates": [
+            13.602975399943517,
+            51.071260210184874
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "water_02_vereinigte_mulde",
+          "name": "Vereinigte Mulde Floodplain (Grimma)",
+          "water_type": "Major River Viaduct & Floodplain Aquifer",
+          "basin": "Mulde River Basin (A14 Muldebr\u00fccke)",
+          "influence_radius_m": 5000,
+          "water_table_depth_m": 0.9,
+          "moisture_saturation_pct": 94,
+          "frost_susceptibility": "F3 (High)"
+        },
+        "geometry": {
+          "coordinates": [
+            12.783210544432706,
+            51.25750351264742
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "water_03_grillensee",
+          "name": "Grillensee (Naunhofer Seenplatte)",
+          "water_type": "Groundwater-Fed Quarry Lake",
+          "basin": "Parthe-Mulde Glacial Outwash Plain",
+          "influence_radius_m": 5000,
+          "water_table_depth_m": 1.1,
+          "moisture_saturation_pct": 88,
+          "frost_susceptibility": "F2 (Moderate)"
+        },
+        "geometry": {
+          "coordinates": [
+            12.607786179388654,
+            51.29729793962318
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "water_04_moritzsee",
+          "name": "Moritzsee Aquifer (Naunhof-West)",
+          "water_type": "Deep Gravel Pit Lake & Seepage Zone",
+          "basin": "Leipziger Tieflandsbucht",
+          "influence_radius_m": 5000,
+          "water_table_depth_m": 1.0,
+          "moisture_saturation_pct": 91,
+          "frost_susceptibility": "F3 (High)"
+        },
+        "geometry": {
+          "coordinates": [
+            12.536242142977414,
+            51.31051360137573
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "water_05_albrechtshainer_see",
+          "name": "Albrechtshainer See (Beucha)",
+          "water_type": "Lacustrine Subgrade Seepage Basin",
+          "basin": "Parthenaue Hydrological Reserve",
+          "influence_radius_m": 5000,
+          "water_table_depth_m": 1.3,
+          "moisture_saturation_pct": 85,
+          "frost_susceptibility": "F2 (Moderate)"
+        },
+        "geometry": {
+          "coordinates": [
+            12.569950554126251,
+            51.31258571295635
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "water_06_parthe_crossing",
+          "name": "Parthe River Meadow (Althen-Kleinp\u00f6sna)",
+          "water_type": "Lowland River & Marsh Subgrade",
+          "basin": "Parthe Catchment Area",
+          "influence_radius_m": 5000,
+          "water_table_depth_m": 0.85,
+          "moisture_saturation_pct": 95,
+          "frost_susceptibility": "F3 (High)"
+        },
+        "geometry": {
+          "coordinates": [
+            12.531972303486015,
+            51.30065407973947
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "water_07_rietzschke",
+          "name": "\u00d6stliche Rietzschke (Leipzig-Paunsdorf)",
+          "water_type": "Urban Drainage Stream & Retention Zone",
+          "basin": "White Elster / Luppe Basin",
+          "influence_radius_m": 5000,
+          "water_table_depth_m": 1.5,
+          "moisture_saturation_pct": 76,
+          "frost_susceptibility": "F2 (Moderate)"
+        },
+        "geometry": {
+          "coordinates": [
+            12.39006548121884,
+            51.26807707566215
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "water_08_engelsdorf_basin",
+          "name": "Engelsdorfer Retention Pond",
+          "water_type": "Highway Stormwater & Groundwater Basin",
+          "basin": "Eastern Leipzig Aquifer",
+          "influence_radius_m": 5000,
+          "water_table_depth_m": 1.35,
+          "moisture_saturation_pct": 80,
+          "frost_susceptibility": "F2 (Moderate)"
+        },
+        "geometry": {
+          "coordinates": [
+            12.421332940624694,
+            51.256734928148944
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": "water_09_baalsdorf_wetland",
+          "name": "Baalsdorfer Wetland & Subbase Drain",
+          "water_type": "Shallow Perched Water Table",
+          "basin": "Parthe-Threne Lowland",
+          "influence_radius_m": 5000,
+          "water_table_depth_m": 1.15,
+          "moisture_saturation_pct": 86,
+          "frost_susceptibility": "F3 (High)"
+        },
+        "geometry": {
+          "coordinates": [
+            12.437095035696814,
+            51.24964291112647
+          ],
+          "type": "Point"
+        }
+      }
+    ]
+  }
+}

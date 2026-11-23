@@ -1,0 +1,73 @@
+{
+  "federation_name": "A14_Corridor_Road_Federation",
+  "hla_standard": "IEEE 1516-2010 (High-Level Architecture) + Heraklit Module Composition",
+  "version": "2.0.0",
+  "time_management": {
+    "coupling_scheme": "Multi-Rate Fast-Slow Co-Simulation",
+    "slow_scale": {
+      "owner": "RSU_Environment_Federate",
+      "domain": "1D Pavement Thermal Conduction, Markov Micro-Climate & Hydrological Soil Cooling",
+      "step_sec": 5.0
+    },
+    "fast_scale": {
+      "owner": "Vehicle_Mechanical_Federate",
+      "domain": "Vehicle Kinematics, Tire-Pavement Contact Load & POD/FEM Structural Response",
+      "step_sec": 0.05
+    }
+  },
+  "object_classes": {
+    "EnvironmentBoundaryState": {
+      "publisher": "RSU_Environment_Federate",
+      "subscriber": "Vehicle_Mechanical_Federate",
+      "heraklit_gate": "beta(M_RSU) == alpha(M_Vehicle)",
+      "attributes": [
+        {"name": "WeatherState", "type": "DiscreteToken", "values": ["Sunny", "Cloudy", "Rainy", "Snowy"]},
+        {"name": "AirTemperature", "type": "ContinuousFluid", "unit": "degC"},
+        {"name": "RoadSurfaceTemperature", "type": "ContinuousFluid", "unit": "degC"},
+        {"name": "SoilTemperature", "type": "ContinuousFluid", "unit": "degC"},
+        {"name": "RoadStructure", "type": "DiscreteToken", "values": ["RoadStructure_0", "RoadStructure_1", "RoadStructure_2", "RoadStructure_3", "RoadStructure_4"]}
+      ]
+    },
+    "VehicleKinematicTelemetry": {
+      "publisher": "Vehicle_Mechanical_Federate",
+      "subscriber": "RSU_Environment_Federate",
+      "heraklit_gate": "beta(M_Vehicle) == alpha(M_RSU)",
+      "attributes": [
+        {"name": "Kilometer", "type": "ContinuousFluid", "unit": "km"},
+        {"name": "Velocity", "type": "ContinuousFluid", "unit": "km/h"},
+        {"name": "Weight", "type": "ContinuousFluid", "unit": "kg"},
+        {"name": "SolverMode", "type": "DiscreteToken", "values": ["POD", "FEM"]},
+        {"name": "PODAccuracy", "type": "ContinuousFluid", "unit": "ratio"},
+        {"name": "DamageIncrement", "type": "ContinuousFluid", "unit": "index"}
+      ]
+    }
+  },
+  "interaction_classes": {
+    "ContractNegotiation": {
+      "initiator": "Vehicle_Mechanical_Federate",
+      "receiver": "RSU_Environment_Federate",
+      "preconditions": "distance_km <= 10.0 and rssi_dbm >= -85"
+    },
+    "FastSlowBoundarySync": {
+      "initiator": "RSU_Environment_Federate",
+      "receiver": "Vehicle_Mechanical_Federate",
+      "description": "Pushes slow-scale RSU thermal/moisture boundary conditions into the fast-scale vehicle HPN."
+    },
+    "FOMBasisRecalibration": {
+      "initiator": "Vehicle_Mechanical_Federate",
+      "receiver": "RSU_Environment_Federate",
+      "guard": "PODAccuracy <= 0.90",
+      "description": "Triggered when POD projection error exceeds 0.10; executes full-order FEM step and resets POD basis."
+    },
+    "RoadDamageCommit": {
+      "initiator": "Vehicle_Mechanical_Federate",
+      "receiver": "RSU_Environment_Federate",
+      "description": "Commits fast-scale mechanical rutting/fatigue damage increment to the traversed corridor segment."
+    },
+    "CorridorCellHandover": {
+      "initiator": "CorridorRTI",
+      "receiver": "RSU_Environment_Federate",
+      "description": "Detaches Heraklit composition M_RSU_old • M_Vehicle and composes M_RSU_new • M_Vehicle."
+    }
+  }
+}

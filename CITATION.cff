@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+authors:
+  - family-names: "Prokopets"
+    given-names: "Volodymyr"
+    affiliation: "Technische Universität Dresden"
+title: "Digital Twin Road: Cyber-Physical Highway Infrastructure Platform"
+version: 2.0.0
+date-released: 2026-11-23
+license: MIT
+repository-code: "https://github.com/vprokopets/digital-twin-road"
+abstract: >-
+  An open-source cyber-physical Digital Twin and Digital Shadow platform
+  for highway corridor infrastructure, connected freight fleet telemetry,
+  dynamic multi-axle vehicle kinematics, dual Boussinesq (asphalt) and
+  Westergaard (concrete) pavement mechanics, pluggable data curation
+  brokers (native, FIWARE Orion), and edge Roadside Unit (RSU)
+  federation co-simulation.
+keywords:
+  - "digital twin"
+  - "cyber-physical systems"
+  - "boussinesq mechanics"
+  - "westergaard mechanics"
+  - "software product line"
+  - "pavement engineering"
+  - "heraklit algebra"
+  - "hybrid petri nets"
+  - "v2x"
+  - "fiware"
+  - "trr339"
+identifiers:
+  - type: other
+    value: "DFG Project Number 453596084 (TRR 339)"
+    description: "Funding Project Identification"

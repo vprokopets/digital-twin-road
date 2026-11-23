@@ -1,0 +1,205 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "water_00_zschonerbach",
+        "name": "Zschonerbach / Elbe Basin",
+        "water_type": "Alluvial Stream & Groundwater Table",
+        "basin": "Upper Elbe Catchment (Dresden-West)",
+        "influence_radius_m": 5000,
+        "water_table_depth_m": 1.4,
+        "moisture_saturation_pct": 78,
+        "frost_susceptibility": "F2 (Moderate)"
+      },
+      "geometry": {
+        "coordinates": [
+          13.67269682309012,
+          51.073381408763396
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "water_01_wilde_sau",
+        "name": "Wilde Sau Valley (Wilsdruff)",
+        "water_type": "Tributary Stream & Culvert Crossing",
+        "basin": "Meißner Hochland / Wilde Sau",
+        "influence_radius_m": 5000,
+        "water_table_depth_m": 1.2,
+        "moisture_saturation_pct": 82,
+        "frost_susceptibility": "F3 (High)"
+      },
+      "geometry": {
+        "coordinates": [
+          13.602975399943517,
+          51.071260210184874
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "water_02_vereinigte_mulde",
+        "name": "Vereinigte Mulde Floodplain (Grimma)",
+        "water_type": "Major River Viaduct & Floodplain Aquifer",
+        "basin": "Mulde River Basin (A14 Muldebrücke)",
+        "influence_radius_m": 5000,
+        "water_table_depth_m": 0.9,
+        "moisture_saturation_pct": 94,
+        "frost_susceptibility": "F3 (High)"
+      },
+      "geometry": {
+        "coordinates": [
+          12.783210544432706,
+          51.25750351264742
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "water_03_grillensee",
+        "name": "Grillensee (Naunhofer Seenplatte)",
+        "water_type": "Groundwater-Fed Quarry Lake",
+        "basin": "Parthe-Mulde Glacial Outwash Plain",
+        "influence_radius_m": 5000,
+        "water_table_depth_m": 1.1,
+        "moisture_saturation_pct": 88,
+        "frost_susceptibility": "F2 (Moderate)"
+      },
+      "geometry": {
+        "coordinates": [
+          12.607786179388654,
+          51.29729793962318
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "water_04_moritzsee",
+        "name": "Moritzsee Aquifer (Naunhof-West)",
+        "water_type": "Deep Gravel Pit Lake & Seepage Zone",
+        "basin": "Leipziger Tieflandsbucht",
+        "influence_radius_m": 5000,
+        "water_table_depth_m": 1.0,
+        "moisture_saturation_pct": 91,
+        "frost_susceptibility": "F3 (High)"
+      },
+      "geometry": {
+        "coordinates": [
+          12.536242142977414,
+          51.31051360137573
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "water_05_albrechtshainer_see",
+        "name": "Albrechtshainer See (Beucha)",
+        "water_type": "Lacustrine Subgrade Seepage Basin",
+        "basin": "Parthenaue Hydrological Reserve",
+        "influence_radius_m": 5000,
+        "water_table_depth_m": 1.3,
+        "moisture_saturation_pct": 85,
+        "frost_susceptibility": "F2 (Moderate)"
+      },
+      "geometry": {
+        "coordinates": [
+          12.569950554126251,
+          51.31258571295635
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "water_06_parthe_crossing",
+        "name": "Parthe River Meadow (Althen-Kleinpösna)",
+        "water_type": "Lowland River & Marsh Subgrade",
+        "basin": "Parthe Catchment Area",
+        "influence_radius_m": 5000,
+        "water_table_depth_m": 0.85,
+        "moisture_saturation_pct": 95,
+        "frost_susceptibility": "F3 (High)"
+      },
+      "geometry": {
+        "coordinates": [
+          12.531972303486015,
+          51.30065407973947
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "water_07_rietzschke",
+        "name": "Östliche Rietzschke (Leipzig-Paunsdorf)",
+        "water_type": "Urban Drainage Stream & Retention Zone",
+        "basin": "White Elster / Luppe Basin",
+        "influence_radius_m": 5000,
+        "water_table_depth_m": 1.5,
+        "moisture_saturation_pct": 76,
+        "frost_susceptibility": "F2 (Moderate)"
+      },
+      "geometry": {
+        "coordinates": [
+          12.39006548121884,
+          51.26807707566215
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "water_08_engelsdorf_basin",
+        "name": "Engelsdorfer Retention Pond",
+        "water_type": "Highway Stormwater & Groundwater Basin",
+        "basin": "Eastern Leipzig Aquifer",
+        "influence_radius_m": 5000,
+        "water_table_depth_m": 1.35,
+        "moisture_saturation_pct": 80,
+        "frost_susceptibility": "F2 (Moderate)"
+      },
+      "geometry": {
+        "coordinates": [
+          12.421332940624694,
+          51.256734928148944
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "water_09_baalsdorf_wetland",
+        "name": "Baalsdorfer Wetland & Subbase Drain",
+        "water_type": "Shallow Perched Water Table",
+        "basin": "Parthe-Threne Lowland",
+        "influence_radius_m": 5000,
+        "water_table_depth_m": 1.15,
+        "moisture_saturation_pct": 86,
+        "frost_susceptibility": "F3 (High)"
+      },
+      "geometry": {
+        "coordinates": [
+          12.437095035696814,
+          51.24964291112647
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}

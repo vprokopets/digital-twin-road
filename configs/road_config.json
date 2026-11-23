@@ -1,0 +1,247 @@
+{
+    "RoadStructure_0": {
+        "Name": "DD",
+        "LoadClass": "Bk10",
+        "Standard": "RStO 12 Tafel 1, Zeile 1",
+        "RoadType": {
+            "Asphalt": {}
+        },
+        "Lanes": 2,
+        "LaneWidth": 3,
+        "LaneDiscretization": 20,
+        "Layer_0": {
+            "Name": "Surface Course (AC 11 D S)",
+            "EquivalentStiffness": 1.5,
+            "Length": 0.04,
+            "CorrespondingStiffness": 37.5,
+            "ThermalConductivity": 1.5,
+            "HeatCapacity": 920,
+            "Density": 2350,
+            "ModulusMPa": 6500
+        },
+        "Layer_1": {
+            "Name": "Binder Course (AC 16 B S)",
+            "EquivalentStiffness": 1.6,
+            "Length": 0.08,
+            "CorrespondingStiffness": 20.0,
+            "ThermalConductivity": 1.6,
+            "HeatCapacity": 920,
+            "Density": 2400,
+            "ModulusMPa": 8000
+        },
+        "Layer_2": {
+            "Name": "Asphalt Base Course (AC 22 T S)",
+            "EquivalentStiffness": 1.45,
+            "Length": 0.14,
+            "CorrespondingStiffness": 10.3571,
+            "ThermalConductivity": 1.45,
+            "HeatCapacity": 920,
+            "Density": 2380,
+            "ModulusMPa": 7500
+        },
+        "Layer_3": {
+            "Name": "Frost Protection Layer (FSS)",
+            "EquivalentStiffness": 2.0,
+            "Length": 0.44,
+            "CorrespondingStiffness": 4.5455,
+            "ThermalConductivity": 2.0,
+            "HeatCapacity": 850,
+            "Density": 2100,
+            "ModulusMPa": 150
+        }
+    },
+    "RoadStructure_1": {
+        "Name": "A4",
+        "LoadClass": "Bk100",
+        "Standard": "RStO 12 Tafel 1, Zeile 1",
+        "RoadType": {
+            "Asphalt": {}
+        },
+        "Lanes": 3,
+        "LaneWidth": 3,
+        "LaneDiscretization": 20,
+        "Layer_0": {
+            "Name": "Surface Course (SMA 11 S)",
+            "EquivalentStiffness": 1.5,
+            "Length": 0.04,
+            "CorrespondingStiffness": 37.5,
+            "ThermalConductivity": 1.5,
+            "HeatCapacity": 920,
+            "Density": 2350,
+            "ModulusMPa": 6500
+        },
+        "Layer_1": {
+            "Name": "Binder Course (AC 16 B S)",
+            "EquivalentStiffness": 1.6,
+            "Length": 0.08,
+            "CorrespondingStiffness": 20.0,
+            "ThermalConductivity": 1.6,
+            "HeatCapacity": 920,
+            "Density": 2400,
+            "ModulusMPa": 8000
+        },
+        "Layer_2": {
+            "Name": "Asphalt Base Course (AC 22 T S)",
+            "EquivalentStiffness": 1.45,
+            "Length": 0.22,
+            "CorrespondingStiffness": 6.5909,
+            "ThermalConductivity": 1.45,
+            "HeatCapacity": 920,
+            "Density": 2380,
+            "ModulusMPa": 7500
+        },
+        "Layer_3": {
+            "Name": "Frost Protection Layer (FSS)",
+            "EquivalentStiffness": 2.0,
+            "Length": 0.36,
+            "CorrespondingStiffness": 5.5556,
+            "ThermalConductivity": 2.0,
+            "HeatCapacity": 850,
+            "Density": 2100,
+            "ModulusMPa": 150
+        }
+    },
+    "RoadStructure_2": {
+        "Name": "A14",
+        "LoadClass": "Bk100",
+        "Standard": "RStO 12 Tafel 2, Zeile 1",
+        "RoadType": {
+            "Concrete": {}
+        },
+        "Lanes": 3,
+        "LaneWidth": 3,
+        "LaneDiscretization": 20,
+        "Layer_0": {
+            "Name": "Concrete Slab (JPCP C30/37)",
+            "EquivalentStiffness": 2.1,
+            "Length": 0.27,
+            "CorrespondingStiffness": 7.7778,
+            "ThermalConductivity": 2.1,
+            "HeatCapacity": 1000,
+            "Density": 2400,
+            "ModulusMPa": 34000
+        },
+        "Layer_1": {
+            "Name": "Hydraulically Bound Base (HGT)",
+            "EquivalentStiffness": 1.8,
+            "Length": 0.15,
+            "CorrespondingStiffness": 12.0,
+            "ThermalConductivity": 1.8,
+            "HeatCapacity": 950,
+            "Density": 2250,
+            "ModulusMPa": 12000
+        },
+        "Layer_2": {
+            "Name": "Frost Protection Layer (FSS)",
+            "EquivalentStiffness": 2.0,
+            "Length": 0.28,
+            "CorrespondingStiffness": 7.1429,
+            "ThermalConductivity": 2.0,
+            "HeatCapacity": 850,
+            "Density": 2100,
+            "ModulusMPa": 150
+        }
+    },
+    "RoadStructure_3": {
+        "Name": "A38",
+        "LoadClass": "Bk32",
+        "Standard": "RStO 12 Tafel 1, Zeile 1",
+        "RoadType": {
+            "Asphalt": {}
+        },
+        "Lanes": 3,
+        "LaneWidth": 3,
+        "LaneDiscretization": 20,
+        "Layer_0": {
+            "Name": "Surface Course (SMA 11 S)",
+            "EquivalentStiffness": 1.5,
+            "Length": 0.04,
+            "CorrespondingStiffness": 37.5,
+            "ThermalConductivity": 1.5,
+            "HeatCapacity": 920,
+            "Density": 2350,
+            "ModulusMPa": 6500
+        },
+        "Layer_1": {
+            "Name": "Binder Course (AC 16 B S)",
+            "EquivalentStiffness": 1.6,
+            "Length": 0.08,
+            "CorrespondingStiffness": 20.0,
+            "ThermalConductivity": 1.6,
+            "HeatCapacity": 920,
+            "Density": 2400,
+            "ModulusMPa": 8000
+        },
+        "Layer_2": {
+            "Name": "Asphalt Base Course (AC 22 T S)",
+            "EquivalentStiffness": 1.45,
+            "Length": 0.18,
+            "CorrespondingStiffness": 8.0556,
+            "ThermalConductivity": 1.45,
+            "HeatCapacity": 920,
+            "Density": 2380,
+            "ModulusMPa": 7500
+        },
+        "Layer_3": {
+            "Name": "Frost Protection Layer (FSS)",
+            "EquivalentStiffness": 2.0,
+            "Length": 0.40,
+            "CorrespondingStiffness": 5.0,
+            "ThermalConductivity": 2.0,
+            "HeatCapacity": 850,
+            "Density": 2100,
+            "ModulusMPa": 150
+        }
+    },
+    "RoadStructure_4": {
+        "Name": "L",
+        "LoadClass": "Bk3.2",
+        "Standard": "RStO 12 Tafel 1, Zeile 1",
+        "RoadType": {
+            "Asphalt": {}
+        },
+        "Lanes": 1,
+        "LaneWidth": 3,
+        "LaneDiscretization": 20,
+        "Layer_0": {
+            "Name": "Surface Course (AC 11 D S)",
+            "EquivalentStiffness": 1.5,
+            "Length": 0.04,
+            "CorrespondingStiffness": 37.5,
+            "ThermalConductivity": 1.5,
+            "HeatCapacity": 920,
+            "Density": 2350,
+            "ModulusMPa": 6500
+        },
+        "Layer_1": {
+            "Name": "Binder Course (AC 16 B N)",
+            "EquivalentStiffness": 1.6,
+            "Length": 0.04,
+            "CorrespondingStiffness": 40.0,
+            "ThermalConductivity": 1.6,
+            "HeatCapacity": 920,
+            "Density": 2400,
+            "ModulusMPa": 8000
+        },
+        "Layer_2": {
+            "Name": "Asphalt Base Course (AC 22 T N)",
+            "EquivalentStiffness": 1.45,
+            "Length": 0.14,
+            "CorrespondingStiffness": 10.3571,
+            "ThermalConductivity": 1.45,
+            "HeatCapacity": 920,
+            "Density": 2380,
+            "ModulusMPa": 7500
+        },
+        "Layer_3": {
+            "Name": "Frost Protection Layer (FSS)",
+            "EquivalentStiffness": 2.0,
+            "Length": 0.43,
+            "CorrespondingStiffness": 4.6512,
+            "ThermalConductivity": 2.0,
+            "HeatCapacity": 850,
+            "Density": 2100,
+            "ModulusMPa": 150
+        }
+    }
+}

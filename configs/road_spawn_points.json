@@ -1,0 +1,401 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_00_dd_altstadt",
+        "code": "AS 78",
+        "short_code": "DD-ALT",
+        "name": "AS 78 Dresden-Altstadt",
+        "junction_type": "Anschlussstelle (Slip-Road Junction)",
+        "highway": "A4",
+        "connecting_roads": "B6 / Meißner Landstraße",
+        "ramp_lanes": 2,
+        "hgv_share_pct": 24,
+        "daily_aadt": 68500
+      },
+      "geometry": {
+        "coordinates": [
+          13.689482198486843,
+          51.082850094769555
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_01_dd_west",
+        "code": "AD 77b",
+        "short_code": "DD-W",
+        "name": "AD Dresden-West",
+        "junction_type": "Autobahndreieck (3-Way Interchange)",
+        "highway": "A4 / A17",
+        "connecting_roads": "A17 (Prague Corridor)",
+        "ramp_lanes": 3,
+        "hgv_share_pct": 31,
+        "daily_aadt": 84200
+      },
+      "geometry": {
+        "coordinates": [
+          13.605782126242815,
+          51.06290535134761
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_02_wilsdruff",
+        "code": "AS 77a",
+        "short_code": "WILS",
+        "name": "AS 77a Wilsdruff",
+        "junction_type": "Anschlussstelle (Slip-Road Junction)",
+        "highway": "A4",
+        "connecting_roads": "S36 / Freiberger Straße",
+        "ramp_lanes": 2,
+        "hgv_share_pct": 22,
+        "daily_aadt": 59400
+      },
+      "geometry": {
+        "coordinates": [
+          13.523437872280908,
+          51.06047389234723
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_03_ad_nossen",
+        "code": "AD 76",
+        "short_code": "AD-NOS",
+        "name": "AD Nossen (A4 / A14 Split)",
+        "junction_type": "Autobahndreieck (3-Way Corridor Split)",
+        "highway": "A4 / A14",
+        "connecting_roads": "A4 (Chemnitz) ↔ A14 (Leipzig)",
+        "ramp_lanes": 3,
+        "hgv_share_pct": 34,
+        "daily_aadt": 91000
+      },
+      "geometry": {
+        "coordinates": [
+          13.366639499321366,
+          51.05376390524532
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_04_nossen_ost",
+        "code": "AS 35",
+        "short_code": "NOS-E",
+        "name": "AS 35 Nossen-Ost",
+        "junction_type": "Anschlussstelle (Slip-Road Junction)",
+        "highway": "A14",
+        "connecting_roads": "B101 (Meißen / Freiberg)",
+        "ramp_lanes": 2,
+        "hgv_share_pct": 26,
+        "daily_aadt": 51200
+      },
+      "geometry": {
+        "coordinates": [
+          13.343542918245845,
+          51.05709778943324
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_05_nossen_nord",
+        "code": "AS 34",
+        "short_code": "NOS-N",
+        "name": "AS 34 Nossen-Nord",
+        "junction_type": "Anschlussstelle (Slip-Road Junction)",
+        "highway": "A14",
+        "connecting_roads": "B175 (Nossen / Roßwein)",
+        "ramp_lanes": 2,
+        "hgv_share_pct": 25,
+        "daily_aadt": 48900
+      },
+      "geometry": {
+        "coordinates": [
+          13.276586973485706,
+          51.08387533449954
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_06_doebeln_ost",
+        "code": "AS 33",
+        "short_code": "DL-E",
+        "name": "AS 33 Döbeln-Ost",
+        "junction_type": "Anschlussstelle (Slip-Road Junction)",
+        "highway": "A14",
+        "connecting_roads": "B175 / S34 (Döbeln-Zentrum)",
+        "ramp_lanes": 2,
+        "hgv_share_pct": 27,
+        "daily_aadt": 49500
+      },
+      "geometry": {
+        "coordinates": [
+          13.17599631905344,
+          51.11293701409525
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_07_doebeln_nord",
+        "code": "AS 32",
+        "short_code": "DL-N",
+        "name": "AS 32 Döbeln-Nord",
+        "junction_type": "Anschlussstelle (Slip-Road Junction)",
+        "highway": "A14",
+        "connecting_roads": "B169 (Riesa / Döbeln)",
+        "ramp_lanes": 2,
+        "hgv_share_pct": 29,
+        "daily_aadt": 52800
+      },
+      "geometry": {
+        "coordinates": [
+          13.123578314155395,
+          51.15582624343929
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_08_leisnig",
+        "code": "AS 31",
+        "short_code": "LEIS",
+        "name": "AS 31 Leisnig",
+        "junction_type": "Anschlussstelle (Slip-Road Junction)",
+        "highway": "A14",
+        "connecting_roads": "S31 (Leisnig / Mügeln)",
+        "ramp_lanes": 2,
+        "hgv_share_pct": 23,
+        "daily_aadt": 46100
+      },
+      "geometry": {
+        "coordinates": [
+          12.965873039427407,
+          51.20113033235131
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_09_mutzschen",
+        "code": "AS 30",
+        "short_code": "MUTZ",
+        "name": "AS 30 Mutzschen",
+        "junction_type": "Anschlussstelle (Slip-Road Junction)",
+        "highway": "A14",
+        "connecting_roads": "S38 (Wermsdorf / Mutzschen)",
+        "ramp_lanes": 2,
+        "hgv_share_pct": 24,
+        "daily_aadt": 47300
+      },
+      "geometry": {
+        "coordinates": [
+          12.859789156277884,
+          51.24223943489409
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_10_grimma",
+        "code": "AS 29",
+        "short_code": "GRIM",
+        "name": "AS 29 Grimma",
+        "junction_type": "Anschlussstelle (Slip-Road Junction)",
+        "highway": "A14",
+        "connecting_roads": "B107 (Grimma / Wurzen)",
+        "ramp_lanes": 2,
+        "hgv_share_pct": 28,
+        "daily_aadt": 55400
+      },
+      "geometry": {
+        "coordinates": [
+          12.732596821418412,
+          51.2572403659409
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_11_klinga",
+        "code": "AS 28",
+        "short_code": "KLIN",
+        "name": "AS 28 Klinga",
+        "junction_type": "Anschlussstelle (Slip-Road Junction)",
+        "highway": "A14",
+        "connecting_roads": "S45 (Parthenstein / Klinga)",
+        "ramp_lanes": 2,
+        "hgv_share_pct": 25,
+        "daily_aadt": 53900
+      },
+      "geometry": {
+        "coordinates": [
+          12.639394073080183,
+          51.28631073727226
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_12_naunhof",
+        "code": "AS 27",
+        "short_code": "NAUN",
+        "name": "AS 27 Naunhof",
+        "junction_type": "Anschlussstelle (Slip-Road Junction)",
+        "highway": "A14",
+        "connecting_roads": "S43 (Naunhof / Brandis)",
+        "ramp_lanes": 2,
+        "hgv_share_pct": 26,
+        "daily_aadt": 58100
+      },
+      "geometry": {
+        "coordinates": [
+          12.597259724121756,
+          51.30527860952424
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_13_ad_parthenaue",
+        "code": "AD 26b",
+        "short_code": "PART",
+        "name": "AD Parthenaue (A14 / A38)",
+        "junction_type": "Autobahndreieck (3-Way Interchange)",
+        "highway": "A14 / A38",
+        "connecting_roads": "A38 (Göttingen / South Ring)",
+        "ramp_lanes": 3,
+        "hgv_share_pct": 33,
+        "daily_aadt": 76800
+      },
+      "geometry": {
+        "coordinates": [
+          12.552959944315546,
+          51.309765599810845
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_14_kleinpoesna",
+        "code": "AS 26a",
+        "short_code": "KLP",
+        "name": "AS 26a Kleinpösna",
+        "junction_type": "Anschlussstelle (Slip-Road Junction)",
+        "highway": "A14",
+        "connecting_roads": "S38 (Borsdorf / Kleinpösna)",
+        "ramp_lanes": 2,
+        "hgv_share_pct": 27,
+        "daily_aadt": 62300
+      },
+      "geometry": {
+        "coordinates": [
+          12.46255812280512,
+          51.26243083916958
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_15_leipzig_ost",
+        "code": "AS 25",
+        "short_code": "LPZ-E",
+        "name": "AS 25 Leipzig-Ost",
+        "junction_type": "Anschlussstelle (Urban Arterial Interchange)",
+        "highway": "A14",
+        "connecting_roads": "B6 (Leipzig-Paunsdorf / Wurzen)",
+        "ramp_lanes": 3,
+        "hgv_share_pct": 30,
+        "daily_aadt": 71500
+      },
+      "geometry": {
+        "coordinates": [
+          12.39241477971865,
+          51.248166640841134
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_16_dresden_hub",
+        "code": "DD-HUB",
+        "short_code": "DD",
+        "name": "Dresden-Neustadt Corridor Hub",
+        "junction_type": "Autobahnanschluss (Eastern Corridor Origin)",
+        "highway": "A4",
+        "connecting_roads": "B170 / Hansastraße Dresden",
+        "ramp_lanes": 3,
+        "hgv_share_pct": 29,
+        "daily_aadt": 79000
+      },
+      "geometry": {
+        "coordinates": [
+          13.736678587070429,
+          51.06365835395388
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "jct_17_leipzig_hub",
+        "code": "LPZ-HUB",
+        "short_code": "LPZ",
+        "name": "Leipzig-Mitte / Messe Hub",
+        "junction_type": "Autobahnanschluss (Western Corridor Terminus)",
+        "highway": "A14",
+        "connecting_roads": "B2 (Leipzig-Zentrum / Messe)",
+        "ramp_lanes": 3,
+        "hgv_share_pct": 32,
+        "daily_aadt": 82400
+      },
+      "geometry": {
+        "coordinates": [
+          12.370843083201123,
+          51.33504996112444
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}

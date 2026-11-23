@@ -1,0 +1,60 @@
+{
+  "profile_version": "2.0.0",
+  "name": "Federal Motorway Heavy Freight Profile",
+  "speed_limits": {
+    "hgv_min_kmh": 60.0,
+    "hgv_max_kmh": 90.0,
+    "drone_patrol_kmh": 45.0
+  },
+  "traffic_parameters": {
+    "spawn_probability": 0.05,
+    "max_active_vehicles": 50,
+    "direction_split": [0.5, 0.5]
+  },
+  "fleet_composition": [
+    {
+      "class_name": "SemiTrailer_5Axle",
+      "model": "Mercedes-Benz Actros 1845",
+      "frequency_weight": 0.55,
+      "gross_weight_kg": 40000,
+      "axle_count": 5,
+      "chassis_length_m": 16.5,
+      "width_m": 2.55,
+      "axle_loads_kn": [70.0, 115.0, 75.0, 75.0, 75.0],
+      "contact_pressure_kpa": 750.0
+    },
+    {
+      "class_name": "HeavyFreight_5Axle",
+      "model": "MAN TGX 18.510",
+      "frequency_weight": 0.25,
+      "gross_weight_kg": 40000,
+      "axle_count": 5,
+      "chassis_length_m": 16.5,
+      "width_m": 2.55,
+      "axle_loads_kn": [70.0, 115.0, 75.0, 75.0, 75.0],
+      "contact_pressure_kpa": 750.0
+    },
+    {
+      "class_name": "RigidTruck_3Axle",
+      "model": "Scania R500",
+      "frequency_weight": 0.12,
+      "gross_weight_kg": 26000,
+      "axle_count": 3,
+      "chassis_length_m": 10.2,
+      "width_m": 2.55,
+      "axle_loads_kn": [70.0, 95.0, 95.0],
+      "contact_pressure_kpa": 700.0
+    },
+    {
+      "class_name": "Electric_HGV",
+      "model": "eActros LongHaul",
+      "frequency_weight": 0.08,
+      "gross_weight_kg": 42000,
+      "axle_count": 5,
+      "chassis_length_m": 16.5,
+      "width_m": 2.55,
+      "axle_loads_kn": [80.0, 120.0, 75.0, 75.0, 75.0],
+      "contact_pressure_kpa": 800.0
+    }
+  ]
+}

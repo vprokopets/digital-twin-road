@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "metamodel_version": "2.0.0",
+  "title": "Road Digital Twin Scenario Description Schema",
+  "description": "Unified schema for corridor and proving ground simulation scenarios (A14, ATC, SML).",
+  "type": "object",
+  "required": ["scenario_id", "name", "version", "coordinate_system", "files"],
+  "properties": {
+    "scenario_id": {
+      "type": "string",
+      "description": "Unique identifier for the scenario (e.g. 'a14_corridor', 'aldenhoven_atc')"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable scenario title"
+    },
+    "version": {
+      "type": "string",
+      "default": "2.0.0"
+    },
+    "description": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string",
+      "default": "Volodymyr Prokopets"
+    },
+    "coordinate_system": {
+      "type": "object",
+      "required": ["mode"],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["WGS84", "LocalCartesian"]
+        },
+        "crs_epsg": {
+          "type": "integer",
+          "default": 4326
+        },
+        "origin_gps": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 2,
+          "maxItems": 2,
+          "description": "[longitude, latitude] geographic reference anchor"
+        },
+        "unit": {
+          "type": "string",
+          "default": "deg",
+          "description": "Coordinate unit ('deg' for WGS84, 'm' for LocalCartesian)"
+        },
+        "bounds": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": { "type": "number" },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "description": "Optional [[min_x, min_y], [max_x, max_y]] facility bounds in meters"
+        }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "properties": {
+        "weather_model": {
+          "type": "string",
+          "enum": ["markov", "deterministic", "realtime_pi"],
+          "default": "markov"
+        },
+        "base_temperature_air": {
+          "type": "number",
+          "default": 22.0
+        },
+        "base_temperature_soil": {
+          "type": "number",
+          "default": 14.5
+        },
+        "water_affect_radius_m": {
+          "type": "number",
+          "default": 5000.0
+        }
+      }
+    },
+    "simulation": {
+      "type": "object",
+      "properties": {
+        "scale_multiplier": {
+          "type": "number",
+          "default": 5.0
+        },
+        "fast_slow_ratio": {
+          "type": "integer",
+          "default": 50
+        },
+        "vehicle_limit": {
+          "type": "integer",
+          "default": 50
+        },
+        "spawn_probability": {
+          "type": "number",
+          "default": 0.05
+        },
+        "closed_loop": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether vehicles wrap continuously around a closed test-track loop"
+        }
+      }
+    },
+    "files": {
+      "type": "object",
+      "required": ["pavement_catalog", "road_segments", "infrastructure"],
+      "properties": {
+        "pavement_catalog": { "type": "string", "default": "pavement_catalog.json" },
+        "road_segments": { "type": "string", "default": "road_segments.geojson" },
+        "road_curves": { "type": "string", "default": "road_curves.geojson" },
+        "lane_polygons": { "type": "string", "default": "lane_polygons.geojson" },
+        "infrastructure": { "type": "string", "default": "infrastructure.json" },
+        "traffic_profile": { "type": "string", "default": "traffic_profile.json" }
+      }
+    }
+  }
+}

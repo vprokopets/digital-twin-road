@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Heavy Duty Steer Tires (Lower Left & Right) -->
+  <rect x="11" y="65" width="12" height="24" rx="4" fill="#1e293b" stroke="#0f172a" stroke-width="1.5" />
+  <rect x="77" y="65" width="12" height="24" rx="4" fill="#1e293b" stroke="#0f172a" stroke-width="1.5" />
+  <!-- Underbody Chassis & Axle -->
+  <rect x="20" y="74" width="60" height="12" rx="2" fill="#334155" />
+
+  <!-- Aerodynamic Side Mirrors with Mounting Arms -->
+  <!-- Left Mirror -->
+  <path d="M18 36 L7 32" stroke="#00305E" stroke-width="3" stroke-linecap="round" />
+  <path d="M18 48 L7 44" stroke="#00305E" stroke-width="2.5" stroke-linecap="round" />
+  <rect x="4" y="28" width="6" height="20" rx="2.5" fill="#00305E" stroke="#ffffff" stroke-width="1" />
+  <rect x="5.5" y="30" width="3" height="16" rx="1" fill="#5096BE" />
+  <!-- Right Mirror -->
+  <path d="M82 36 L93 32" stroke="#00305E" stroke-width="3" stroke-linecap="round" />
+  <path d="M82 48 L93 44" stroke="#00305E" stroke-width="2.5" stroke-linecap="round" />
+  <rect x="90" y="28" width="6" height="20" rx="2.5" fill="#00305E" stroke="#ffffff" stroke-width="1" />
+  <rect x="91.5" y="30" width="3" height="16" rx="1" fill="#5096BE" />
+
+  <!-- Main High-Rise Cab Body (Fahrerhaus) -->
+  <path d="M22 18 C22 13, 27 10, 34 10 L66 10 C73 10, 78 13, 78 18 L81 68 C81 72, 78 74, 73 74 L27 74 C22 74, 19 72, 19 68 Z"
+        fill="#00305E" stroke="#ffffff" stroke-width="1.8" />
+
+  <!-- Roof Aerodynamic Fairing & Marker Lights -->
+  <path d="M32 10 L36 6 L64 6 L68 10 Z" fill="#004480" />
+  <!-- Clearance / Marker Lights -->
+  <ellipse cx="27" cy="12" rx="2.5" ry="1.5" fill="#f59e0b" />
+  <ellipse cx="50" cy="8.5" rx="3" ry="1.5" fill="#ffffff" />
+  <ellipse cx="73" cy="12" rx="2.5" ry="1.5" fill="#f59e0b" />
+
+  <!-- Sun Visor (Sonnenblende) -->
+  <path d="M21 21 L79 21 L76 27 L24 27 Z" fill="#0f172a" opacity="0.9" />
+
+  <!-- Panoramic High Windshield (Frontscheibe) -->
+  <path d="M24 27 L76 27 L74 46 C74 47.5, 72 48.5, 70 48.5 L30 48.5 C28 48.5, 26 47.5, 26 46 Z"
+        fill="#0c4a6e" stroke="#0284c7" stroke-width="1.2" />
+  <!-- Windshield Reflection -->
+  <path d="M27 30 L45 30 L38 45 L26 45 Z" fill="#38bdf8" opacity="0.3" />
+  <path d="M50 30 L56 30 L49 45 L43 45 Z" fill="#ffffff" opacity="0.2" />
+  <!-- Dual Windshield Wipers -->
+  <line x1="38" y1="47" x2="48" y2="38" stroke="#1e293b" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="58" y1="47" x2="68" y2="38" stroke="#1e293b" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- Front Radiator Grille (Kühlergrill) -->
+  <rect x="30" y="51" width="40" height="16" rx="2.5" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+  <line x1="33" y1="54" x2="67" y2="54" stroke="#475569" stroke-width="1.5" />
+  <line x1="33" y1="58" x2="67" y2="58" stroke="#475569" stroke-width="1.5" />
+  <line x1="33" y1="62" x2="67" y2="62" stroke="#475569" stroke-width="1.5" />
+  <!-- Center Brand Emblem -->
+  <circle cx="50" cy="58" r="3.5" fill="#5096BE" stroke="#ffffff" stroke-width="1" />
+  <circle cx="50" cy="58" r="1.5" fill="#BECD32" />
+
+  <!-- Heavy Duty Front Bumper (Stoßstange) -->
+  <path d="M18 68 L82 68 L80 78 C80 80, 77 81, 72 81 L28 81 C23 81, 20 80, 20 78 Z"
+        fill="#001f3f" stroke="#ffffff" stroke-width="1.5" />
+
+  <!-- Modern Angled LED Headlights (Scheinwerfer) -->
+  <!-- Left Headlight -->
+  <polygon points="22,70 30,70 29,76 21,75" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8" />
+  <polygon points="22,70 25,70 24,75 21,75" fill="#f59e0b" /> <!-- Turn Signal -->
+  <circle cx="27" cy="72.5" r="1.5" fill="#38bdf8" /> <!-- Xenon Projector -->
+  <!-- Right Headlight -->
+  <polygon points="70,70 78,70 79,75 71,76" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8" />
+  <polygon points="75,70 78,70 79,75 76,75" fill="#f59e0b" /> <!-- Turn Signal -->
+  <circle cx="73" cy="72.5" r="1.5" fill="#38bdf8" /> <!-- Xenon Projector -->
+
+  <!-- Lower Fog Lights / DRL -->
+  <rect x="23" y="77.5" width="6" height="2" rx="1" fill="#f8fafc" />
+  <rect x="71" y="77.5" width="6" height="2" rx="1" fill="#f8fafc" />
+
+  <!-- German Highway License Plate (Kennzeichen) -->
+  <rect x="41" y="72" width="18" height="6" rx="1" fill="#ffffff" stroke="#0f172a" stroke-width="0.8" />
+  <rect x="41.5" y="72.5" width="2.5" height="5" fill="#003399" /> <!-- Euro Blue Band -->
+  <text x="45" y="76.5" font-family="monospace" font-size="3.8" font-weight="bold" fill="#0f172a">DTR 2.0</text>
+</svg>

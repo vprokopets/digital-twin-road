@@ -1,0 +1,114 @@
+# ==============================================================================
+# Zensical Documentation Configuration (zensical.toml)
+# Modern Rust/Python Static Site Generator by Squidfunk (Material for MkDocs)
+# ==============================================================================
+
+[project]
+site_name = "Digital Twin Road Platform"
+site_url = "https://vprokopets.github.io/digital-twin-road/"
+site_description = "Cyber-Physical Highway Infrastructure, Connected Fleet Telemetry, Heraklit HPN Algebra & 2D Boussinesq Mechanics"
+site_author = "Volodymyr Prokopets"
+copyright = "&copy; 2026 Volodymyr Prokopets &bull; MIT License &bull; Technische Universit&auml;t Dresden"
+
+docs_dir = "docs"
+site_dir = "site"
+
+repo_url = "https://github.com/vprokopets/digital-twin-road"
+repo_name = "vprokopets/digital-twin-road"
+
+extra_css = [
+    "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css",
+    "stylesheets/extra.css"
+]
+
+extra_javascript = [
+    "javascripts/katex.js",
+    "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js",
+    "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+]
+
+nav = [
+    { "Overview" = "index.md" },
+    { "Getting Started" = [
+        { "Installation & Setup" = "getting_started/installation.md" },
+        { "Quickstart Guide" = "getting_started/quickstart.md" }
+    ]},
+    { "System Architecture" = [
+        { "C4 Architecture Blueprint" = "architecture/index.md" },
+        { "System Context & Boundaries" = "architecture/system_context.md" },
+        { "Container Topology" = "architecture/containers.md" },
+        { "Concurrency & SSE Streaming" = "architecture/concurrency_and_streaming.md" }
+    ]},
+    { "Scientific Foundations" = [
+        { "2D Boussinesq & Westergaard Mechanics" = "scientific_foundations/boussinesq_mechanics.md" },
+        { "1D Thermal Subsurface Diffusion" = "scientific_foundations/thermal_diffusion.md" },
+        { "Continuum Road Wear & Rutting" = "scientific_foundations/continuum_damage.md" },
+        { "HERAKLIT Module Algebra (Reisig)" = "scientific_foundations/heraklit_algebra.md" }
+    ]},
+    { "Federation & Co-Simulation" = [
+        { "IEEE 1516 HLA / FOM Standards" = "federation_cosimulation/hla_fom_standard.md" },
+        { "Dynamic RSU-Vehicle SLA Contracts" = "federation_cosimulation/dynamic_contracts.md" }
+    ]},
+    { "API & Module Reference" = [
+        { "FastAPI Backend & SSE Endpoints" = "api_reference/dashboard_backend.md" },
+        { "Digital Shadow Coordinator" = "api_reference/digital_shadow.md" },
+        { "Heraklit HPN Engine (hpn.py)" = "api_reference/hpn_engine.md" },
+        { "Corridor Geography & Environment" = "api_reference/world_corridor.md" },
+        { "Vehicle Kinematics & Axle Dynamics" = "api_reference/vehicle_kinematics.md" }
+    ]},
+    { "Frontend Architecture" = [
+        { "Vue 3 SPA Layout" = "frontend/spa_architecture.md" },
+        { "60 FPS Canvas GIS Optimization" = "frontend/canvas_optimization.md" },
+        { "Reactive Pinia State Management" = "frontend/state_management.md" }
+    ]},
+    { "DevOps & FAIR Data" = [
+        { "Docker Containerization" = "devops_deployment/docker.md" },
+        { "FAIR Principles & Open Science" = "devops_deployment/fair_data_policy.md" }
+    ]}
+]
+
+[project.theme]
+variant = "modern"
+features = [
+    "content.code.copy",
+    "navigation.tabs",
+    "navigation.sections",
+    "navigation.top",
+    "toc.integrate",
+    "search.suggest",
+    "search.highlight"
+]
+
+[[project.theme.palette]]
+scheme = "default"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+[project.theme.font]
+text = "Inter"
+code = "JetBrains Mono"
+
+[project.markdown_extensions]
+"pymdownx.highlight" = { anchor_linenums = true, pygments_lang_class = true }
+"pymdownx.inlinehilite" = {}
+"pymdownx.tabbed" = { alternate_style = true }
+"pymdownx.arithmatex" = { generic = true }
+"pymdownx.details" = {}
+"pymdownx.snippets" = {}
+"admonition" = {}
+"tables" = {}
+"toc" = { permalink = true }
+
+[project.markdown_extensions."pymdownx.superfences"]
+custom_fences = [
+    { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+]

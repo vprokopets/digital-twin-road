@@ -1,0 +1,86 @@
+name: CI — Lint, Test & Build
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  backend:
+    name: Backend (Ruff & Pytest)
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: "pip"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt pytest ruff==0.8.4
+
+      - name: Run Ruff Linter
+        run: ruff check .
+
+      - name: Run Pytest Suite
+        run: pytest -v
+
+  frontend:
+    name: Frontend (Vue-TSC & Vite Build)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install Frontend Dependencies
+        working-directory: frontend
+        run: npm ci --legacy-peer-deps
+
+      - name: Typecheck & Build Production Bundle
+        working-directory: frontend
+        run: npm run build
+
+  docs:
+    name: Documentation (Zensical Build)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install Zensical & Build Docs
+        run: |
+          python -m pip install --upgrade pip
+          pip install zensical pymdown-extensions
+          zensical build --clean
+
+  security_hygiene:
+    name: Repository Hygiene & Leak Prevention
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify zero proprietary logos, internal assets, or prototypes
+        run: |
+          if git ls-files | grep -iE 'logo_crc|logo_crctrr339|dfg_logo|^chair_assets/|^julia_simulation/'; then
+            echo "::error::Proprietary chair assets, logos, or prototypes found in git tree!"
+            exit 1
+          fi
+          echo "Clean: Zero proprietary branding or prototypes found."

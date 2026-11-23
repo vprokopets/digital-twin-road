@@ -1,0 +1,262 @@
+{
+  "catalog_version": "2.0.0",
+  "catalog_name": "RStO 12 Standard Pavement Catalog",
+  "description": "Standardized German structural pavement cross-sections according to RStO 12 guidelines (Saxony Frost Action Zone II, F3 frost-susceptible subgrade), including unbound Frost Protection Layers (FSS).",
+  "pavements": {
+    "Asphalt_Bk100_SMA11S": {
+      "name": "Asphalt Pavement (Bk100 SMA 11 S)",
+      "road_type": "Asphalt",
+      "standard": "RStO 12 Tafel 1, Zeile 1 (Bk100)",
+      "total_thickness_m": 0.70,
+      "layers": [
+        {
+          "name": "Surface Course (SMA 11 S)",
+          "thickness_m": 0.04,
+          "e_modulus_mpa": 6500.0,
+          "poisson_ratio": 0.35,
+          "density_kg_m3": 2350.0,
+          "thermal_conductivity_w_mk": 1.5,
+          "heat_capacity_j_kgk": 920.0
+        },
+        {
+          "name": "Binder Course (AC 16 B S)",
+          "thickness_m": 0.08,
+          "e_modulus_mpa": 8000.0,
+          "poisson_ratio": 0.35,
+          "density_kg_m3": 2400.0,
+          "thermal_conductivity_w_mk": 1.6,
+          "heat_capacity_j_kgk": 920.0
+        },
+        {
+          "name": "Asphalt Base Course (AC 22 T S)",
+          "thickness_m": 0.22,
+          "e_modulus_mpa": 7500.0,
+          "poisson_ratio": 0.35,
+          "density_kg_m3": 2380.0,
+          "thermal_conductivity_w_mk": 1.45,
+          "heat_capacity_j_kgk": 920.0
+        },
+        {
+          "name": "Frost Protection Layer (FSS)",
+          "thickness_m": 0.36,
+          "e_modulus_mpa": 150.0,
+          "poisson_ratio": 0.40,
+          "density_kg_m3": 2100.0,
+          "thermal_conductivity_w_mk": 2.0,
+          "heat_capacity_j_kgk": 850.0
+        }
+      ]
+    },
+    "Concrete_Bk100_Rigid": {
+      "name": "Concrete Pavement (Bk100 Rigid Slab)",
+      "road_type": "Concrete",
+      "standard": "RStO 12 Tafel 2, Zeile 1 (Bk100)",
+      "total_thickness_m": 0.70,
+      "layers": [
+        {
+          "name": "Concrete Slab (JPCP C30/37)",
+          "thickness_m": 0.27,
+          "e_modulus_mpa": 34000.0,
+          "poisson_ratio": 0.20,
+          "density_kg_m3": 2400.0,
+          "thermal_conductivity_w_mk": 2.1,
+          "heat_capacity_j_kgk": 1000.0
+        },
+        {
+          "name": "Hydraulically Bound Base (HGT)",
+          "thickness_m": 0.15,
+          "e_modulus_mpa": 12000.0,
+          "poisson_ratio": 0.25,
+          "density_kg_m3": 2250.0,
+          "thermal_conductivity_w_mk": 1.8,
+          "heat_capacity_j_kgk": 950.0
+        },
+        {
+          "name": "Frost Protection Layer (FSS)",
+          "thickness_m": 0.28,
+          "e_modulus_mpa": 150.0,
+          "poisson_ratio": 0.40,
+          "density_kg_m3": 2100.0,
+          "thermal_conductivity_w_mk": 2.0,
+          "heat_capacity_j_kgk": 850.0
+        }
+      ]
+    },
+    "Porous_Asphalt_LowNoise": {
+      "name": "Porous Asphalt (PA 8 Low-Noise Course)",
+      "road_type": "Asphalt",
+      "standard": "RStO 12 Noise-Reduced (Bk100)",
+      "total_thickness_m": 0.70,
+      "layers": [
+        {
+          "name": "Drainage / Porous Course (PA 8)",
+          "thickness_m": 0.04,
+          "e_modulus_mpa": 3500.0,
+          "poisson_ratio": 0.35,
+          "density_kg_m3": 2050.0,
+          "thermal_conductivity_w_mk": 1.1,
+          "heat_capacity_j_kgk": 900.0
+        },
+        {
+          "name": "Binder Course (AC 16 B S)",
+          "thickness_m": 0.08,
+          "e_modulus_mpa": 8000.0,
+          "poisson_ratio": 0.35,
+          "density_kg_m3": 2400.0,
+          "thermal_conductivity_w_mk": 1.6,
+          "heat_capacity_j_kgk": 920.0
+        },
+        {
+          "name": "Asphalt Base Course (AC 22 T S)",
+          "thickness_m": 0.22,
+          "e_modulus_mpa": 7500.0,
+          "poisson_ratio": 0.35,
+          "density_kg_m3": 2380.0,
+          "thermal_conductivity_w_mk": 1.45,
+          "heat_capacity_j_kgk": 920.0
+        },
+        {
+          "name": "Frost Protection Layer (FSS)",
+          "thickness_m": 0.36,
+          "e_modulus_mpa": 150.0,
+          "poisson_ratio": 0.40,
+          "density_kg_m3": 2100.0,
+          "thermal_conductivity_w_mk": 2.0,
+          "heat_capacity_j_kgk": 850.0
+        }
+      ]
+    },
+    "Asphalt_Bk32_SMA11S": {
+      "name": "Asphalt Pavement (Bk32 SMA 11 S)",
+      "road_type": "Asphalt",
+      "standard": "RStO 12 Tafel 1, Zeile 1 (Bk32)",
+      "total_thickness_m": 0.70,
+      "layers": [
+        {
+          "name": "Surface Course (SMA 11 S)",
+          "thickness_m": 0.04,
+          "e_modulus_mpa": 6500.0,
+          "poisson_ratio": 0.35,
+          "density_kg_m3": 2350.0,
+          "thermal_conductivity_w_mk": 1.5,
+          "heat_capacity_j_kgk": 920.0
+        },
+        {
+          "name": "Binder Course (AC 16 B S)",
+          "thickness_m": 0.08,
+          "e_modulus_mpa": 8000.0,
+          "poisson_ratio": 0.35,
+          "density_kg_m3": 2400.0,
+          "thermal_conductivity_w_mk": 1.6,
+          "heat_capacity_j_kgk": 920.0
+        },
+        {
+          "name": "Asphalt Base Course (AC 22 T S)",
+          "thickness_m": 0.18,
+          "e_modulus_mpa": 7500.0,
+          "poisson_ratio": 0.35,
+          "density_kg_m3": 2380.0,
+          "thermal_conductivity_w_mk": 1.45,
+          "heat_capacity_j_kgk": 920.0
+        },
+        {
+          "name": "Frost Protection Layer (FSS)",
+          "thickness_m": 0.40,
+          "e_modulus_mpa": 150.0,
+          "poisson_ratio": 0.40,
+          "density_kg_m3": 2100.0,
+          "thermal_conductivity_w_mk": 2.0,
+          "heat_capacity_j_kgk": 850.0
+        }
+      ]
+    },
+    "Asphalt_Bk10_AC11DS": {
+      "name": "Asphalt Pavement (Bk10 AC 11 D S)",
+      "road_type": "Asphalt",
+      "standard": "RStO 12 Tafel 1, Zeile 1 (Bk10)",
+      "total_thickness_m": 0.70,
+      "layers": [
+        {
+          "name": "Surface Course (AC 11 D S)",
+          "thickness_m": 0.04,
+          "e_modulus_mpa": 6500.0,
+          "poisson_ratio": 0.35,
+          "density_kg_m3": 2350.0,
+          "thermal_conductivity_w_mk": 1.5,
+          "heat_capacity_j_kgk": 920.0
+        },
+        {
+          "name": "Binder Course (AC 16 B S)",
+          "thickness_m": 0.08,
+          "e_modulus_mpa": 8000.0,
+          "poisson_ratio": 0.35,
+          "density_kg_m3": 2400.0,
+          "thermal_conductivity_w_mk": 1.6,
+          "heat_capacity_j_kgk": 920.0
+        },
+        {
+          "name": "Asphalt Base Course (AC 22 T S)",
+          "thickness_m": 0.14,
+          "e_modulus_mpa": 7500.0,
+          "poisson_ratio": 0.35,
+          "density_kg_m3": 2380.0,
+          "thermal_conductivity_w_mk": 1.45,
+          "heat_capacity_j_kgk": 920.0
+        },
+        {
+          "name": "Frost Protection Layer (FSS)",
+          "thickness_m": 0.44,
+          "e_modulus_mpa": 150.0,
+          "poisson_ratio": 0.40,
+          "density_kg_m3": 2100.0,
+          "thermal_conductivity_w_mk": 2.0,
+          "heat_capacity_j_kgk": 850.0
+        }
+      ]
+    },
+    "Asphalt_Bk3_2_AC11DS": {
+      "name": "Asphalt Pavement (Bk3.2 AC 11 D S)",
+      "road_type": "Asphalt",
+      "standard": "RStO 12 Tafel 1, Zeile 1 (Bk3.2)",
+      "total_thickness_m": 0.65,
+      "layers": [
+        {
+          "name": "Surface Course (AC 11 D S)",
+          "thickness_m": 0.04,
+          "e_modulus_mpa": 6500.0,
+          "poisson_ratio": 0.35,
+          "density_kg_m3": 2350.0,
+          "thermal_conductivity_w_mk": 1.5,
+          "heat_capacity_j_kgk": 920.0
+        },
+        {
+          "name": "Binder Course (AC 16 B N)",
+          "thickness_m": 0.04,
+          "e_modulus_mpa": 8000.0,
+          "poisson_ratio": 0.35,
+          "density_kg_m3": 2400.0,
+          "thermal_conductivity_w_mk": 1.6,
+          "heat_capacity_j_kgk": 920.0
+        },
+        {
+          "name": "Asphalt Base Course (AC 22 T N)",
+          "thickness_m": 0.14,
+          "e_modulus_mpa": 7500.0,
+          "poisson_ratio": 0.35,
+          "density_kg_m3": 2380.0,
+          "thermal_conductivity_w_mk": 1.45,
+          "heat_capacity_j_kgk": 920.0
+        },
+        {
+          "name": "Frost Protection Layer (FSS)",
+          "thickness_m": 0.43,
+          "e_modulus_mpa": 150.0,
+          "poisson_ratio": 0.40,
+          "density_kg_m3": 2100.0,
+          "thermal_conductivity_w_mk": 2.0,
+          "heat_capacity_j_kgk": 850.0
+        }
+      ]
+    }
+  }
+}

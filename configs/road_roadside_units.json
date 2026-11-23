@@ -1,0 +1,236 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rsu_00",
+        "tag": "RSU-00",
+        "name": "RSU-00 (Dresden-Altstadt / Elbebrücke)",
+        "town": "Dresden-Altstadt / Kemnitz",
+        "station_km": 5.1,
+        "ClosestPoint": 5.1,
+        "ClosestPointDist": 0.0364,
+        "coverage_radius_km": 10.0,
+        "standard": "ETSI ITS-G5 / IEEE 802.11p"
+      },
+      "geometry": {
+        "coordinates": [
+          13.683309685576688,
+          51.076359619955326
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rsu_01",
+        "tag": "RSU-01",
+        "name": "RSU-01 (Wilsdruff / Grumbach)",
+        "town": "Wilsdruff / Grumbach",
+        "station_km": 17.7,
+        "ClosestPoint": 17.7,
+        "ClosestPointDist": 0.0761,
+        "coverage_radius_km": 10.0,
+        "standard": "ETSI ITS-G5 / IEEE 802.11p"
+      },
+      "geometry": {
+        "coordinates": [
+          13.510902263585194,
+          51.06156015037345
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rsu_02",
+        "tag": "RSU-02",
+        "name": "RSU-02 (AD Nossen / Triebischtal)",
+        "town": "AD Nossen (A4 / A14 Split)",
+        "station_km": 27.9,
+        "ClosestPoint": 27.9,
+        "ClosestPointDist": 0.1328,
+        "coverage_radius_km": 10.0,
+        "standard": "ETSI ITS-G5 / IEEE 802.11p"
+      },
+      "geometry": {
+        "coordinates": [
+          13.371187377570408,
+          51.05445120997962
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rsu_03",
+        "tag": "RSU-03",
+        "name": "RSU-03 (Döbeln-Ost / Roßwein)",
+        "town": "Döbeln-Ost / Roßwein",
+        "station_km": 43.3,
+        "ClosestPoint": 43.3,
+        "ClosestPointDist": 0.0785,
+        "coverage_radius_km": 10.0,
+        "standard": "ETSI ITS-G5 / IEEE 802.11p"
+      },
+      "geometry": {
+        "coordinates": [
+          13.175784629451499,
+          51.112831914780344
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rsu_04",
+        "tag": "RSU-04",
+        "name": "RSU-04 (Leisnig / Großweitzschen)",
+        "town": "Leisnig / Großweitzschen",
+        "station_km": 58.5,
+        "ClosestPoint": 58.5,
+        "ClosestPointDist": 0.0666,
+        "coverage_radius_km": 10.0,
+        "standard": "ETSI ITS-G5 / IEEE 802.11p"
+      },
+      "geometry": {
+        "coordinates": [
+          13.008940450679063,
+          51.188549283783146
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rsu_05",
+        "tag": "RSU-05",
+        "name": "RSU-05 (Mutzschen / Wermsdorf)",
+        "town": "Mutzschen / Wermsdorf",
+        "station_km": 71.3,
+        "ClosestPoint": 71.3,
+        "ClosestPointDist": 0.0655,
+        "coverage_radius_km": 10.0,
+        "standard": "ETSI ITS-G5 / IEEE 802.11p"
+      },
+      "geometry": {
+        "coordinates": [
+          12.856454958570396,
+          51.24292644742138
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rsu_06",
+        "tag": "RSU-06",
+        "name": "RSU-06 (Grimma / Hohnstädt)",
+        "town": "Grimma / Hohnstädt",
+        "station_km": 77.3,
+        "ClosestPoint": 77.3,
+        "ClosestPointDist": 0.0470,
+        "coverage_radius_km": 10.0,
+        "standard": "ETSI ITS-G5 / IEEE 802.11p"
+      },
+      "geometry": {
+        "coordinates": [
+          12.778674110746294,
+          51.2583025069039
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rsu_07",
+        "tag": "RSU-07",
+        "name": "RSU-07 (Naunhof / Brandis)",
+        "town": "Naunhof / Brandis",
+        "station_km": 91.3,
+        "ClosestPoint": 91.3,
+        "ClosestPointDist": 0.0904,
+        "coverage_radius_km": 10.0,
+        "standard": "ETSI ITS-G5 / IEEE 802.11p"
+      },
+      "geometry": {
+        "coordinates": [
+          12.600051526322943,
+          51.303905576470214
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rsu_08",
+        "tag": "RSU-08",
+        "name": "RSU-08 (Partheaue / Albrechtshain)",
+        "town": "Partheaue / Albrechtshain",
+        "station_km": 99.9,
+        "ClosestPoint": 99.9,
+        "ClosestPointDist": 0.0534,
+        "coverage_radius_km": 10.0,
+        "standard": "ETSI ITS-G5 / IEEE 802.11p"
+      },
+      "geometry": {
+        "coordinates": [
+          12.511442829684256,
+          51.287274804251325
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rsu_09",
+        "tag": "RSU-09",
+        "name": "RSU-09 (Engelsdorf / Leipzig-Ost)",
+        "town": "Engelsdorf / Leipzig-Ost",
+        "station_km": 109.5,
+        "ClosestPoint": 109.5,
+        "ClosestPointDist": 0.2215,
+        "coverage_radius_km": 10.0,
+        "standard": "ETSI ITS-G5 / IEEE 802.11p"
+      },
+      "geometry": {
+        "coordinates": [
+          12.387238420231085,
+          51.24942573074924
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rsu_10",
+        "tag": "RSU-10",
+        "name": "RSU-10 (Leipzig-Mitte / Messe)",
+        "town": "Leipzig-Mitte / Messe",
+        "station_km": 119.1,
+        "ClosestPoint": 119.1,
+        "ClosestPointDist": 0.0925,
+        "coverage_radius_km": 10.0,
+        "standard": "ETSI ITS-G5 / IEEE 802.11p"
+      },
+      "geometry": {
+        "coordinates": [
+          12.362212424107383,
+          51.321978683744135
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}

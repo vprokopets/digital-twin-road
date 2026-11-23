@@ -1,0 +1,57 @@
+{
+  "scenario_id": "a14_corridor",
+  "name": "Dresden–Leipzig A14 Freight Corridor",
+  "version": "2.0.0",
+  "description": "High-volume dual-carriageway German federal motorway corridor (A14/A4) connecting Dresden and Leipzig via Nossen interchange. Features continuous asphalt and concrete sections, ITS-G5 roadside telemetry, and variable heavy goods vehicle fleets.",
+  "author": "Volodymyr Prokopets",
+  "coordinate_system": {
+    "mode": "WGS84",
+    "crs_epsg": 4326,
+    "origin_gps": [13.736757, 51.063404]
+  },
+  "environment": {
+    "weather_model": "markov",
+    "base_temperature_air": 22.0,
+    "base_temperature_soil": 14.5,
+    "water_affect_radius_m": 5000.0,
+    "weather_stations": [
+      {
+        "id": "rsu_00",
+        "name": "Dresden-West Gateway",
+        "type": "realtime_pi",
+        "station_km": 0.0
+      },
+      {
+        "id": "rsu_01",
+        "name": "Nossen Interchange",
+        "type": "markov",
+        "station_km": 24.5
+      },
+      {
+        "id": "rsu_02",
+        "name": "Grimma Valley",
+        "type": "markov",
+        "station_km": 68.2
+      },
+      {
+        "id": "rsu_03",
+        "name": "Leipzig-East Terminal",
+        "type": "markov",
+        "station_km": 94.8
+      }
+    ]
+  },
+  "simulation": {
+    "scale_multiplier": 5.0,
+    "fast_slow_ratio": 100,
+    "vehicle_limit": 50,
+    "spawn_probability": 0.05
+  },
+  "files": {
+    "pavement_catalog": "pavement_catalog.json",
+    "road_segments": "road_segments.geojson",
+    "road_curves": "road_curves.geojson",
+    "infrastructure": "infrastructure.json",
+    "traffic_profile": "traffic_profile.json"
+  }
+}

@@ -1,0 +1,51 @@
+{
+    "DataBroker": {
+        "backend": "native"
+    },
+    "TrafficManagement": {
+        "SpawnProbability": 0.05,
+        "VehicleLimit": 50,
+        "UpdatePeriod": 1
+    },
+    "Weather": {
+        "TransitionProbabilities": {
+            "Sunny": {
+                "TransitionTo": {
+                    "Cloudy": 0.2,
+                    "Rainy": 0.01
+                }
+            },
+            "Cloudy": {
+                "TransitionTo": {
+                    "Sunny": 0.2,
+                    "Rainy": 0.05
+                }
+            },
+            "Rainy": {
+                "TransitionTo": {
+                    "Sunny": 0.01,
+                    "Cloudy": 0.4
+                }
+            }
+        },
+        "AdaptiveTransition": true,
+        "StandardTemp": {
+            "Air": {
+                "Sunny": 25,
+                "Cloudy": 22,
+                "Rainy": 18
+            },
+            "Soil": {
+                "Dry": 15,
+                "Wet": 10
+            }
+        },
+        "WaterAffectDistance": 5000,
+        "TempDynamicChange": 2,
+        "UpdatePeriod": 1
+    },
+    "Simulation": {
+        "SimulationScale": 5.0,
+        "SimulationMultiplier": 10
+    }
+}

@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "metamodel_version": "2.0.0",
+  "title": "FIWARE IoT Metamodel and Service Registry",
+  "description": "Declarative IoT entity templates, UltraLight sensor mappings, and context subscriptions for the Road Digital Twin.",
+  "service_groups": [
+    {
+      "id": "sg_infrastructure",
+      "service": "openiot",
+      "servicepath": "/",
+      "apikey": "4jggokgpepnvsb2uv4s40d59ov",
+      "entity_type": "Roadside_unit",
+      "protocol": "PDI-IoTA-UltraLight",
+      "transport": "HTTP",
+      "resource": "/iot/d"
+    },
+    {
+      "id": "sg_telematics",
+      "service": "openiot",
+      "servicepath": "/",
+      "apikey": "9x8y7z6w5v4u3t2s1r0q9p8o7n",
+      "entity_type": "Vehicle",
+      "protocol": "PDI-IoTA-UltraLight",
+      "transport": "HTTP",
+      "resource": "/iot/d"
+    },
+    {
+      "id": "sg_embedded_sensors",
+      "service": "openiot",
+      "servicepath": "/",
+      "apikey": "embsens_dtr_v2_corridor",
+      "entity_type": "Embedded_sensor",
+      "protocol": "PDI-IoTA-UltraLight",
+      "transport": "HTTP",
+      "resource": "/iot/d"
+    },
+    {
+      "id": "sg_inspection_drones",
+      "service": "openiot",
+      "servicepath": "/",
+      "apikey": "drone_itsg5_dtr_v2_rsu",
+      "entity_type": "Inspection_drone",
+      "protocol": "PDI-IoTA-UltraLight",
+      "transport": "HTTP",
+      "resource": "/iot/d"
+    }
+  ],
+  "entity_templates": {
+    "Roadside_unit": {
+      "service_group_ref": "sg_infrastructure",
+      "static_attributes": [
+        {"name": "tag", "type": "Text", "default": "RSU-Node"},
+        {"name": "station_km", "type": "Number", "unit": "km", "default": 0.0},
+        {"name": "communication_standard", "type": "Text", "default": "ETSI ITS-G5"},
+        {"name": "coverage_radius_m", "type": "Number", "unit": "m", "default": 10000},
+        {"name": "antenna_height_m", "type": "Number", "unit": "m", "default": 6.5},
+        {"name": "coordinates", "type": "Point", "default": [0.0, 0.0]}
+      ],
+      "dynamic_sensors": [
+        {"name": "Weather", "object_id": "wt", "type": "Text", "unit": "enum", "values": ["Sunny", "Cloudy", "Rainy", "Snowy"]},
+        {"name": "AirTemperature", "object_id": "ta", "type": "Float", "unit": "degC", "range": [-30.0, 50.0]},
+        {"name": "RoadSurfaceTemperature", "object_id": "ts", "type": "Float", "unit": "degC", "range": [-25.0, 75.0]},
+        {"name": "SoilTemperature", "object_id": "tsoil", "type": "Float", "unit": "degC", "range": [-15.0, 35.0]}
+      ]
+    },
+    "Vehicle": {
+      "service_group_ref": "sg_telematics",
+      "static_attributes": [
+        {"name": "Weight", "type": "Integer", "unit": "kg", "default": 18000},
+        {"name": "Length", "type": "Integer", "unit": "m", "default": 12},
+        {"name": "Width", "type": "Integer", "unit": "m", "default": 3},
+        {"name": "StartRoute", "type": "Float", "unit": "km", "default": 0.0},
+        {"name": "EndRoute", "type": "Float", "unit": "km", "default": 50.0},
+        {"name": "Direction", "type": "Integer", "default": 1},
+        {"name": "VehicleClass", "type": "Text", "default": "HGV_HeavyTruck"},
+        {"name": "AxleCount", "type": "Integer", "default": 5}
+      ],
+      "dynamic_sensors": [
+        {"name": "Active", "object_id": "act", "type": "Bool"},
+        {"name": "Velocity", "object_id": "v", "type": "Float", "unit": "km/h", "range": [0.0, 160.0]},
+        {"name": "Model", "object_id": "mdl", "type": "String"},
+        {"name": "Accuracy", "object_id": "acc", "type": "Float", "unit": "ratio"},
+        {"name": "coordinates", "object_id": "pos", "type": "Point"},
+        {"name": "AirTemperature", "object_id": "ta", "type": "Float", "unit": "degC"},
+        {"name": "RoadSurfaceTemperature", "object_id": "ts", "type": "Float", "unit": "degC"},
+        {"name": "SoilTemperature", "object_id": "tsoil", "type": "Float", "unit": "degC"},
+        {"name": "DynamicAxleLoad", "object_id": "load", "type": "Float", "unit": "kN", "range": [0.0, 150.0]},
+        {"name": "DamageIncrement", "object_id": "dmg", "type": "Float", "unit": "index"}
+      ]
+    },
+    "Embedded_sensor": {
+      "service_group_ref": "sg_embedded_sensors",
+      "static_attributes": [
+        {"name": "sensor_id", "type": "Text"},
+        {"name": "sensor_model", "type": "Text", "default": "TML_KM-100HAS"},
+        {"name": "pavement_layer", "type": "Text", "default": "AsphaltSurfaceCourse"},
+        {"name": "depth_mm", "type": "Number", "unit": "mm", "default": 40.0},
+        {"name": "station_km", "type": "Number", "unit": "km", "default": 0.0},
+        {"name": "coordinates", "type": "Point", "default": [0.0, 0.0]}
+      ],
+      "dynamic_sensors": [
+        {"name": "Microstrain", "object_id": "eps", "type": "Float", "unit": "um/m", "range": [-2000.0, 2000.0], "model": "TML KM-100HAS"},
+        {"name": "ContactPressure", "object_id": "p", "type": "Float", "unit": "kPa", "range": [0.0, 1200.0], "model": "TML KDG-500KPA"},
+        {"name": "Moisture", "object_id": "w", "type": "Float", "unit": "%", "range": [0.0, 100.0], "model": "Truebner SMT100"},
+        {"name": "LayerTemperature", "object_id": "tlayer", "type": "Float", "unit": "degC", "range": [-25.0, 75.0], "model": "PT1000"},
+        {"name": "PeakParticleVelocity", "object_id": "ppv", "type": "Float", "unit": "mm/s", "range": [0.0, 200.0], "model": "HGS HG-5VHS"},
+        {"name": "AccelerationRMS", "object_id": "arms", "type": "Float", "unit": "g", "range": [0.0, 2.0], "model": "Silicon Designs 2210-002"},
+        {"name": "AccelerationPeakG", "object_id": "apk", "type": "Float", "unit": "g", "range": [-2.0, 2.0], "model": "Silicon Designs 2210-002"}
+      ]
+    },
+    "Inspection_drone": {
+      "service_group_ref": "sg_inspection_drones",
+      "static_attributes": [
+        {"name": "drone_id", "type": "Text", "default": "UAV-Inspector-01"},
+        {"name": "battery_capacity_mah", "type": "Number", "unit": "mAh", "default": 5200},
+        {"name": "sensor_payload", "type": "Text", "default": "Optical_Thermal_LiDAR"}
+      ],
+      "dynamic_sensors": [
+        {"name": "coordinates", "object_id": "pos", "type": "Point"},
+        {"name": "altitude_m", "object_id": "alt", "type": "Float", "unit": "m", "range": [0.0, 150.0]},
+        {"name": "battery_pct", "object_id": "bat", "type": "Float", "unit": "%", "range": [0.0, 100.0]},
+        {"name": "airspeed_ms", "object_id": "aspd", "type": "Float", "unit": "m/s", "range": [0.0, 25.0]},
+        {"name": "pavement_cracks_detected", "object_id": "crk", "type": "Integer"}
+      ]
+    }
+  },
+  "persistency": {
+    "sink": "postgresql",
+    "subscription_description": "Notify Cygnus Postgres of all digital shadow context events",
+    "cygnus_url": "http://cygnus:5055/notify",
+    "entities": [
+      {
+        "idPattern": ".*"
+      }
+    ],
+    "throttling_s": 0
+  }
+}

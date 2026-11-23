@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Twin Road — Cyber-Physical Highway Infrastructure Platform</title>
+  <script>
+    {
+      const colorScheme = localStorage.getItem("color-scheme");
+      if (colorScheme === "dark" || colorScheme === "light") {
+        const meta = document.querySelector('meta[name="color-scheme"]');
+        if (meta) meta.content = colorScheme;
+        document.documentElement.classList.toggle("dark", colorScheme === "dark");
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

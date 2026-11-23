@@ -1,0 +1,114 @@
+@import 'tailwindcss';
+
+/* Enable class-based dark mode in Tailwind CSS v4 so `dark:` utilities sync with `.dark` on <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-laptop: 1440px;
+  --breakpoint-fhd: 1920px;
+  --breakpoint-2k: 2560px;
+  --breakpoint-4k: 3840px;
+  --breakpoint-5k: 5120px;
+
+  /* Platform Design System Tokens */
+  --color-dtr-primary: #00305E;
+  --color-dtr-primary-mid: #004982;
+  --color-dtr-accent: #5096BE;
+  --color-dtr-area-a: #5096BE;
+  --color-dtr-area-b: #BECD32;
+  --color-dtr-area-c: #00AA82;
+  --color-dtr-gray-light: #F2F2F2;
+  --color-dtr-gray-middle: #706F6F;
+  --color-dtr-gray-dark: #3C3C3B;
+}
+
+:root {
+  /* Platform Theme Custom Properties */
+  --primary: #00305E;
+  --primary-mid: #004982;
+  --accent: #5096BE;
+  --color-a: #5096BE;
+  --color-b: #BECD32;
+  --color-c: #00AA82;
+  --gray-light: #F2F2F2;
+  --gray-middle: #706F6F;
+  --gray-dark: #3C3C3B;
+
+  /* Native UI theme & brand accent color */
+  --brand-accent-light: #00305E;
+  --brand-accent-dark: #5096BE;
+  --accent-color: var(--brand-accent-light);
+
+  @media (prefers-color-scheme: dark) {
+    --accent-color: var(--brand-accent-dark);
+  }
+
+  @supports (color: light-dark(white, black)) {
+    --accent-color: light-dark(var(--brand-accent-light), var(--brand-accent-dark));
+  }
+
+  color-scheme: light dark;
+  accent-color: var(--accent-color);
+
+  --scrollbar-track: #F2F2F2;
+  --scrollbar-thumb: #94a3b8;
+  @supports (color: light-dark(white, black)) {
+    --scrollbar-track: light-dark(#F2F2F2, #0f172a);
+    --scrollbar-thumb: light-dark(#94a3b8, #334155);
+  }
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+html.dark {
+  color-scheme: dark;
+  --accent-color: var(--brand-accent-dark);
+}
+
+html:not(.dark) {
+  color-scheme: light;
+  --accent-color: var(--brand-accent-light);
+}
+
+/* "FUTURE ROAD SYSTEM" Hero Gradient & Constellation Mesh */
+.dtr-hero-gradient {
+  background-color: #00305E;
+  background-image:
+    radial-gradient(circle at 92% 18%, rgba(190, 205, 50, 0.22) 0%, transparent 28%),
+    radial-gradient(circle at 80% 85%, rgba(80, 150, 190, 0.35) 0%, transparent 45%),
+    linear-gradient(135deg, #00254a 0%, #00305E 45%, #004982 80%, #2b739e 100%);
+}
+
+/* 3-Area Accent Strip */
+.dtr-accent-bar {
+  background: linear-gradient(90deg, #00305E 0%, #5096BE 50%, #BECD32 80%, #00AA82 100%);
+}
+
+/* Smooth custom scrollbars for analytics and code panels */
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hidden-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Legacy fallback for WebKit/Blink browsers without standard scrollbar-color */
+@supports not (scrollbar-color: auto) {
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 3px;
+  }
+}

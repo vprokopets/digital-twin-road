@@ -1,0 +1,109 @@
+services:
+  # --------------------------------------------------------------------------
+  # FIWARE Digital Twin Stack (Isolated)
+  # --------------------------------------------------------------------------
+  mongo-db:
+    image: mongo:6.0
+    container_name: demo-db-mongo
+    profiles:
+      - fiware
+    expose:
+      - "27017"
+    ports:
+      - "27017:27017"
+    networks:
+      - demo-net
+    volumes:
+      - mongo-data:/data/db
+
+  orion:
+    image: quay.io/fiware/orion:4.1.0
+    container_name: demo-fiware-orion
+    profiles:
+      - fiware
+    depends_on:
+      - mongo-db
+    networks:
+      - demo-net
+    ports:
+      - "1026:1026"
+    command: -dbURI mongodb://mongo-db -logLevel DEBUG -noCache
+    healthcheck:
+      test: curl --fail -s http://localhost:1026/version || exit 1
+      interval: 5s
+
+  iot-agent:
+    image: quay.io/fiware/iotagent-ul:3.7.0-distroless
+    container_name: demo-fiware-iot-agent
+    profiles:
+      - fiware
+    depends_on:
+      - orion
+      - mongo-db
+    networks:
+      - demo-net
+    ports:
+      - "4041:4041"
+      - "7896:7896"
+    environment:
+      - IOTA_CB_HOST=orion
+      - IOTA_CB_PORT=1026
+      - IOTA_NORTH_PORT=4041
+      - IOTA_REGISTRY_TYPE=mongodb
+      - IOTA_LOG_LEVEL=DEBUG
+      - IOTA_TIMESTAMP=true
+      - IOTA_CB_NGSI_VERSION=v2
+      - IOTA_AUTOCAST=true
+      - IOTA_MONGO_HOST=mongo-db
+      - IOTA_MONGO_PORT=27017
+      - IOTA_MONGO_DB=iotagentul
+      - IOTA_HTTP_PORT=7896
+      - IOTA_PROVIDER_URL=http://iot-agent:4041
+
+  # --------------------------------------------------------------------------
+  # Demonstrator Services
+  # --------------------------------------------------------------------------
+  demo-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: demo-backend
+    depends_on:
+      orion:
+        condition: service_healthy
+        required: false
+      iot-agent:
+        condition: service_started
+        required: false
+    networks:
+      - demo-net
+    ports:
+      - "8000:8000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      - DATA_BROKER_BACKEND=${DATA_BROKER_BACKEND:-native}
+      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:5173,http://127.0.0.1:5173}
+      - ORION_HOST=${ORION_HOST:-orion}
+      - IOT_AGENT_HOST=${IOT_AGENT_HOST:-iot-agent}
+      - IOT_AGENT_SOUTH_HOST=${IOT_AGENT_SOUTH_HOST:-iot-agent}
+
+  demo-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: demo-frontend
+    depends_on:
+      - demo-backend
+    networks:
+      - demo-net
+    ports:
+      - "5173:80" # Map to standard HTTP port in container
+
+networks:
+  demo-net:
+    driver: bridge
+
+volumes:
+  mongo-data: ~
