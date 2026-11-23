@@ -1,5 +1,6 @@
 # Digital Twin Road Platform
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24485660.svg)](https://doi.org/10.5281/zenodo.24485660)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12%20%7C%203.13-blue)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110%2B-009688.svg)](https://fastapi.tiangolo.com/)

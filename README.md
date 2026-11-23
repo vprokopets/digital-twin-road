@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/vprokopets/digital-twin-road/actions/workflows/ci.yml/badge.svg)](https://github.com/vprokopets/digital-twin-road/actions/workflows/ci.yml)
 [![Docs](https://img.shields.io/badge/Docs-Zensical%20%7C%20GitHub%20Pages-blue)](https://vprokopets.github.io/digital-twin-road/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24485660.svg)](https://doi.org/10.5281/zenodo.24485660)
 [![Tests](https://img.shields.io/badge/Tests-70%20passed-brightgreen)](tests/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12%20%7C%203.13-blue)](https://www.python.org/)
@@ -273,6 +274,24 @@ Inspects active PIDs, port bindings, and container states:
 This research software was developed in connection with scientific investigations conducted within the **DFG Collaborative Research Centre / Transregio TRR 339** (Project Number **453596084**, funded by the Deutsche Forschungsgemeinschaft / German Research Foundation).
 
 In adherence to the **DFG Guidelines on the Handling of Research Data** and the **FAIR Data Principles** (*Findable, Accessible, Interoperable, Reusable*), this software is published openly under the MIT License to foster transparent, reproducible cyber-physical infrastructure modeling across the scientific and engineering community.
+
+---
+
+## Citation
+
+If you use this software in your research, please cite it using [CITATION.cff](CITATION.cff) or the following BibTeX entry:
+
+```bibtex
+@software{prokopets_2026_digital_twin_road,
+  author       = {Prokopets, Volodymyr},
+  title        = {Digital Twin Road: Cyber-Physical Highway Infrastructure Platform},
+  year         = 2026,
+  publisher    = {Zenodo},
+  version      = {v2.0.0},
+  doi          = {10.5281/zenodo.24485660},
+  url          = {https://doi.org/10.5281/zenodo.24485660}
+}
+```
 
 ---
 

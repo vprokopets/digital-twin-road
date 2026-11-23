@@ -7,7 +7,7 @@ In adherence to international **Open Science** recommendations, the Digital Twin
 
 ## 1. Findable (F)
 
-* **Permanent Citable DOI:** Upon release, the repository links directly with **Zenodo** (CERN's EU-funded open repository) to mint an immutable Digital Object Identifier (DOI).
+* **Permanent Citable DOI:** Archived via **Zenodo** (CERN's EU-funded open repository) under permanent DOI [10.5281/zenodo.24485660](https://doi.org/10.5281/zenodo.24485660).
 * **Machine-Readable Metadata:** The repository includes a standardized `CITATION.cff` file conforming to the Citation File Format 1.2.0, providing automated citation parsing on GitHub, Zenodo, and Zotero.
 * **Funding Acknowledgment:** Explicitly indexed with **DFG Project Number 453596084** (Transregio TRR 339).
 

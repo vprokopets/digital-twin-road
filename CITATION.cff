@@ -9,6 +9,7 @@ title: "Digital Twin Road: Cyber-Physical Highway Infrastructure Platform"
 version: 2.0.0
 date-released: 2026-11-23
 license: MIT
+doi: "10.5281/zenodo.24485660"
 repository-code: "https://github.com/vprokopets/digital-twin-road"
 abstract: >-
   An open-source cyber-physical Digital Twin and Digital Shadow platform
