@@ -4,6 +4,7 @@ authors:
   - family-names: "Prokopets"
     given-names: "Volodymyr"
     affiliation: "Technische Universität Dresden"
+    orcid: "https://orcid.org/0000-0002-4530-8899"
 title: "Digital Twin Road: Cyber-Physical Highway Infrastructure Platform"
 version: 2.0.0
 date-released: 2026-11-23
