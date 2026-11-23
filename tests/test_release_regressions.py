@@ -81,6 +81,9 @@ def test_concrete_material_toggles_westergaard_mixin():
         def __init__(self, material_name: str):
             self.material_name = material_name
 
+        def register_warning(self, warning, force: bool = False):
+            return None
+
         def get_states_for_position(self, position: float, direction: int):
             return {
                 "Coordinates": "13.5, 51.1",
