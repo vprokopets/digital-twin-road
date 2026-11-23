@@ -71,7 +71,6 @@ nav = [
 variant = "modern"
 features = [
     "content.code.copy",
-    "navigation.tabs",
     "navigation.sections",
     "navigation.top",
     "toc.integrate",

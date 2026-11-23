@@ -42,8 +42,6 @@ flowchart TD
 
     DTR <-->|"NGSIv2 Entity Mirroring (Optional)"| FIWARE
     OPEN_DATA -.->|"Historical WIM & Weather Feeds"| DTR
-
-    style DTR width:520px
 ```
 
 ---
@@ -87,12 +85,6 @@ flowchart TD
 
     API -.->|"NGSIv2 Sensor Updates"| ORION
     ORION <--> MONGO
-
-    style SPA width:480px
-    style COORDINATOR width:380px
-    style ENGINES width:380px
-    style FED width:380px
-    style WORLD width:380px
 ```
 
 ---
