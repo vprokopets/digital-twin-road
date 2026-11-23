@@ -87,11 +87,25 @@
     radial-gradient(circle at 92% 18%, rgba(190, 205, 50, 0.22) 0%, transparent 28%),
     radial-gradient(circle at 80% 85%, rgba(80, 150, 190, 0.35) 0%, transparent 45%),
     linear-gradient(135deg, #00254a 0%, #00305E 45%, #004982 80%, #2b739e 100%) !important;
-  position: sticky !important;
+  position: fixed !important;
   top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
   z-index: 40 !important;
+  transform: none !important;
   box-shadow: 0 2px 8px rgba(0, 29, 58, 0.25);
   color: #ffffff !important;
+}
+
+.md-header[hidden] {
+  display: block !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
+.md-container {
+  padding-top: 2.4rem !important;
 }
 
 /* Signature 4-Color Accent Strip underneath Header */
