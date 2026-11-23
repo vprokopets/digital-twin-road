@@ -91,6 +91,21 @@ function stop_all() {
 }
 
 function start_all() {
+    if ! [ -x "$UVICORN_BIN" ] && ! command -v "$UVICORN_BIN" >/dev/null 2>&1; then
+        echo "Error: Python backend dependency 'uvicorn' was not found."
+        echo "Install backend dependencies first:"
+        echo "  python3 -m venv .venv && .venv/bin/pip install -r requirements.txt"
+        echo "Or run via Docker instead: ./manage.sh up"
+        exit 1
+    fi
+    if [ ! -x "$FRONTEND_DIR/node_modules/.bin/vite" ]; then
+        echo "Error: Frontend dependencies are not installed (missing frontend/node_modules)."
+        echo "Install frontend dependencies first:"
+        echo "  cd frontend && npm ci --legacy-peer-deps && cd .."
+        echo "Or run via Docker instead: ./manage.sh up"
+        exit 1
+    fi
+
     stop_all
     echo "Starting Backend (FastAPI)..."
     cd "$DEMO_ROOT"

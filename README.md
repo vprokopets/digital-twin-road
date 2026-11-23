@@ -149,6 +149,11 @@ All lifecycle operations are orchestrated via `./manage.sh`:
 ### Run Locally (Recommended)
 Starts the FastAPI backend and Vue 3 frontend in background daemon mode with hot module reloading:
 ```bash
+# One-time setup on a fresh clone:
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+cd frontend && npm ci --legacy-peer-deps && cd ..
+
+# Start FastAPI (:8000) and Vite (:5173) with hot reload:
 ./manage.sh up-local
 ```
 - **Web UI:** [http://localhost:5173](http://localhost:5173)
